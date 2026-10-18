@@ -1,0 +1,16 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/z/my-project/DRS-Nexus/core-data/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest4370786890242253819.xml:2:13-83
+INJECTED from /home/z/my-project/DRS-Nexus/core-data/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest4370786890242253819.xml:2:13-83
+	package
+		INJECTED from /home/z/my-project/DRS-Nexus/core-data/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest4370786890242253819.xml
+	xmlns:android
+		ADDED from /home/z/my-project/DRS-Nexus/core-data/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest4370786890242253819.xml:2:23-81
+uses-sdk
+INJECTED from /home/z/my-project/DRS-Nexus/core-data/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest4370786890242253819.xml reason: use-sdk injection requested
+INJECTED from /home/z/my-project/DRS-Nexus/core-data/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest4370786890242253819.xml
+INJECTED from /home/z/my-project/DRS-Nexus/core-data/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest4370786890242253819.xml
+	android:targetSdkVersion
+		INJECTED from /home/z/my-project/DRS-Nexus/core-data/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest4370786890242253819.xml
+	android:minSdkVersion
+		INJECTED from /home/z/my-project/DRS-Nexus/core-data/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest4370786890242253819.xml

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_launcher_background">#0A84FF</color>
+    <color name="nexus_blue">#0A84FF</color>
+    <color name="nexus_bg_light">#F2F2F7</color>
+    <color name="nexus_bg_dark">#000000</color>
+</resources>

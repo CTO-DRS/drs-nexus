@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "com.drs.nexus.core.data.core-data-release-18:/layout/ime_base_split_test_activity.xml",
+        "source": "com.drs.nexus.core.data.core-data-core-1.15.0-1:/layout/ime_base_split_test_activity.xml"
+    },
+    {
+        "merged": "com.drs.nexus.core.data.core-data-release-18:/layout/notification_template_part_time.xml",
+        "source": "com.drs.nexus.core.data.core-data-core-1.15.0-1:/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "com.drs.nexus.core.data.core-data-release-18:/layout/ime_secondary_split_test_activity.xml",
+        "source": "com.drs.nexus.core.data.core-data-core-1.15.0-1:/layout/ime_secondary_split_test_activity.xml"
+    },
+    {
+        "merged": "com.drs.nexus.core.data.core-data-release-18:/layout/custom_dialog.xml",
+        "source": "com.drs.nexus.core.data.core-data-core-1.15.0-1:/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "com.drs.nexus.core.data.core-data-release-18:/layout/notification_template_part_chronometer.xml",
+        "source": "com.drs.nexus.core.data.core-data-core-1.15.0-1:/layout/notification_template_part_chronometer.xml"
+    }
+]

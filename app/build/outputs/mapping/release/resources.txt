@@ -1,0 +1,972 @@
+Marking id:view_tree_view_model_store_owner:2131034199 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:view_tree_saved_state_registry_owner:2131034198 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:view_tree_lifecycle_owner:2131034196 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:tag_on_apply_window_listener:2131034183 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:tag_window_insets_animation_callback:2131034191 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:action_run:2131296272 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:nav_home:2131296377 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:nav_tools:2131296379 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:nav_history:2131296376 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:nav_settings:2131296378 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:onb_title_1:2131296386 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:onb_body_1:2131296383 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:onb_title_2:2131296387 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:onb_body_2:2131296384 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:onb_title_3:2131296388 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:onb_body_3:2131296385 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:about_tagline:2131296259 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:about_body:2131296256 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:about_repo:2131296258 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:about_license:2131296257 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_0:2131034113 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_1:2131034114 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_2:2131034125 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_3:2131034136 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_4:2131034139 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_5:2131034140 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_6:2131034141 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_7:2131034142 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_8:2131034143 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_9:2131034144 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_10:2131034115 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_11:2131034116 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_12:2131034117 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_13:2131034118 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_14:2131034119 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_15:2131034120 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_16:2131034121 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_17:2131034122 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_18:2131034123 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_19:2131034124 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_20:2131034126 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_21:2131034127 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_22:2131034128 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_23:2131034129 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_24:2131034130 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_25:2131034131 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_26:2131034132 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_27:2131034133 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_28:2131034134 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_29:2131034135 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_30:2131034137 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_custom_action_31:2131034138 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:indeterminate:2131296313 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:state_off:2131296411 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:state_on:2131296412 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:selected:2131296399 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:not_selected:2131296382 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:template_percent:2131296417 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:in_progress:2131296312 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:state_empty:2131296410 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:androidx_compose_ui_view_composition_context:2131034150 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:pooling_container_listener_holder_tag:2131034175 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:inspection_slot_table_set:2131034165 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:settings_haptics:2131296403 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:settings_haptics_desc:2131296404 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:lang_system:2131296318 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:lang_arabic:2131296316 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:lang_english:2131296317 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:theme_system:2131296420 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:theme_light:2131296419 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:theme_dark:2131296418 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:action_delete:2131296266 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:home_stats_tools:2131296310 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:home_stats_runs:2131296309 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:home_stats_favorites:2131296308 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:tag_unhandled_key_event_manager:2131034189 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:tag_unhandled_key_listeners:2131034190 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:tools_search_hint:2131296444 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking style:DialogWindowTheme:2131361792 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:compose_view_saveable_id_tag:2131034154 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:view_tree_on_back_pressed_dispatcher_owner:2131034197 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:label_result:2131296315 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:tab:2131296416 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:switch_role:2131296415 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:is_pooling_container_tag:2131034166 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:action_generate:2131296269 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:entropy_bits:2131296292 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:default_error_message:2131296288 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:hide_in_inspector_tag:2131034161 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:hide_graphics_layer_in_inspector_tag:2131034159 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:about_title:2131296260 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:settings_version:2131296408 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:copied:2131296287 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:wrapped_composition_tag:2131034200 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:password_strength_weak:2131296392 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:password_strength_fair:2131296389 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:password_strength_strong:2131296390 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:password_strength_very_strong:2131296391 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:next:2131296381 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:get_started:2131296296 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:favorites_title:2131296295 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:hint_input:2131296297 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:tool_unit_name:2131296438 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:tool_pass_name:2131296430 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:tool_regex_name:2131296432 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:tool_json_name:2131296426 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:tool_base64_name:2131296422 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:tool_uuid_name:2131296442 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:tool_url_name:2131296440 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:tool_ts_name:2131296436 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:tool_lorem_name:2131296428 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:tool_text_name:2131296434 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:tool_hash_name:2131296424 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:tool_unit_desc:2131296437 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:tool_pass_desc:2131296429 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:tool_regex_desc:2131296431 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:tool_json_desc:2131296425 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:tool_base64_desc:2131296421 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:tool_uuid_desc:2131296441 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:tool_url_desc:2131296439 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:tool_ts_desc:2131296435 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:tool_lorem_desc:2131296427 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:tool_text_desc:2131296433 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:tool_hash_desc:2131296423 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:stats_summary:2131296413 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:favorites_empty:2131296294 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:history_title:2131296303 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:history_empty:2131296301 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:consume_window_insets_tag:2131034155 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:default_popup_window_title:2131296289 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:tools_empty:2131296443 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:tools_title:2131296445 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:history_clear:2131296299 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:skip:2131296409 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:home_quick_tools:2131296306 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:home_no_recent:2131296305 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:home_recent_activity:2131296307 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:home_greeting:2131296304 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:home_subtitle:2131296311 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:action_validate:2131296275 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:androidx_startup:2131296276 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:tag_screen_reader_focusable:2131034186 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:tag_accessibility_heading:2131034181 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:tag_accessibility_pane_title:2131034182 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:tag_state_description:2131034187 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:tag_accessibility_actions:2131034179 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:accessibility_action_clickable_span:2131034112 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:tag_accessibility_clickable_spans:2131034180 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:action_encode:2131296267 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:action_decode:2131296265 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:action_format:2131296268 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:action_minify:2131296270 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:section_converters:2131296395 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:section_generators:2131296397 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:section_text:2131296398 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:section_developer:2131296396 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:action_copy:2131296263 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:action_share:2131296273 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:settings_title:2131296407 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:settings_appearance:2131296401 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:settings_language:2131296405 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:settings_general:2131296402 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking string:settings_about_section:2131296400 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+Marking id:report_drawn:2131034176 reachable: referenced from /home/z/my-project/DRS-Nexus/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+@attr/action : reachable=false
+@attr/alpha : reachable=false
+@attr/argType : reachable=false
+@attr/data : reachable=false
+@attr/dataPattern : reachable=false
+@attr/destination : reachable=false
+@attr/enterAnim : reachable=false
+@attr/exitAnim : reachable=false
+@attr/font : reachable=false
+@attr/fontProviderAuthority : reachable=false
+@attr/fontProviderCerts : reachable=false
+@attr/fontProviderFallbackQuery : reachable=false
+@attr/fontProviderFetchStrategy : reachable=false
+@attr/fontProviderFetchTimeout : reachable=false
+@attr/fontProviderPackage : reachable=false
+@attr/fontProviderQuery : reachable=false
+@attr/fontProviderSystemFontFamily : reachable=false
+@attr/fontStyle : reachable=false
+@attr/fontVariationSettings : reachable=false
+@attr/fontWeight : reachable=false
+@attr/graph : reachable=false
+@attr/lStar : reachable=false
+@attr/launchSingleTop : reachable=false
+@attr/mimeType : reachable=false
+@attr/navGraph : reachable=false
+@attr/nestedScrollViewStyle : reachable=false
+@attr/nullable : reachable=false
+@attr/popEnterAnim : reachable=false
+@attr/popExitAnim : reachable=false
+@attr/popUpTo : reachable=false
+@attr/popUpToInclusive : reachable=false
+@attr/popUpToSaveState : reachable=false
+@attr/queryPatterns : reachable=false
+@attr/restoreState : reachable=false
+@attr/route : reachable=false
+@attr/shortcutMatchRequired : reachable=false
+@attr/startDestination : reachable=false
+@attr/targetPackage : reachable=false
+@attr/ttcIndex : reachable=false
+@attr/uri : reachable=false
+@color/androidx_core_ripple_material_light : reachable=false
+@color/androidx_core_secondary_text_default_material_light : reachable=false
+@color/call_notification_answer_color : reachable=false
+@color/call_notification_decline_color : reachable=false
+@color/ic_launcher_background : reachable=false
+@color/nexus_bg_dark : reachable=false
+@color/nexus_bg_light : reachable=false
+@color/nexus_blue : reachable=false
+@color/notification_action_color_filter : reachable=false
+    @color/androidx_core_secondary_text_default_material_light
+@color/notification_icon_bg_color : reachable=false
+@color/vector_tint_color : reachable=false
+@color/vector_tint_theme_color : reachable=false
+@dimen/compat_button_inset_horizontal_material : reachable=false
+@dimen/compat_button_inset_vertical_material : reachable=false
+@dimen/compat_button_padding_horizontal_material : reachable=false
+@dimen/compat_button_padding_vertical_material : reachable=false
+@dimen/compat_control_corner_material : reachable=false
+@dimen/compat_notification_large_icon_max_height : reachable=false
+@dimen/compat_notification_large_icon_max_width : reachable=false
+@dimen/notification_action_icon_size : reachable=false
+@dimen/notification_action_text_size : reachable=false
+@dimen/notification_big_circle_margin : reachable=false
+@dimen/notification_content_margin_start : reachable=false
+@dimen/notification_large_icon_height : reachable=false
+@dimen/notification_large_icon_width : reachable=false
+@dimen/notification_main_column_padding_top : reachable=false
+@dimen/notification_media_narrow_margin : reachable=false
+@dimen/notification_right_icon_size : reachable=false
+@dimen/notification_right_side_padding_top : reachable=false
+@dimen/notification_small_icon_background_padding : reachable=false
+@dimen/notification_small_icon_size_as_large : reachable=false
+@dimen/notification_subtext_size : reachable=false
+@dimen/notification_top_pad : reachable=false
+@dimen/notification_top_pad_large_text : reachable=false
+@drawable/ic_call_answer : reachable=false
+@drawable/ic_call_answer_low : reachable=false
+@drawable/ic_call_answer_video : reachable=false
+@drawable/ic_call_answer_video_low : reachable=false
+@drawable/ic_call_decline : reachable=false
+@drawable/ic_call_decline_low : reachable=false
+@drawable/ic_launcher_foreground : reachable=false
+@drawable/notification_action_background : reachable=false
+    @color/androidx_core_ripple_material_light
+    @dimen/compat_button_inset_horizontal_material
+    @dimen/compat_button_inset_vertical_material
+    @dimen/compat_control_corner_material
+    @dimen/compat_button_padding_horizontal_material
+    @dimen/compat_button_padding_vertical_material
+@drawable/notification_bg : reachable=false
+    @drawable/notification_bg_normal_pressed
+    @drawable/notification_bg_normal
+@drawable/notification_bg_low : reachable=false
+    @drawable/notification_bg_low_pressed
+    @drawable/notification_bg_low_normal
+@drawable/notification_bg_low_normal : reachable=false
+@drawable/notification_bg_low_pressed : reachable=false
+@drawable/notification_bg_normal : reachable=false
+@drawable/notification_bg_normal_pressed : reachable=false
+@drawable/notification_icon_background : reachable=false
+    @color/notification_icon_bg_color
+@drawable/notification_oversize_large_icon_bg : reachable=false
+@drawable/notification_template_icon_bg : reachable=false
+@drawable/notification_template_icon_low_bg : reachable=false
+@drawable/notification_tile_bg : reachable=false
+    @drawable/notify_panel_notification_icon_bg
+@drawable/notify_panel_notification_icon_bg : reachable=false
+@id/accessibility_action_clickable_span : reachable=true
+@id/accessibility_custom_action_0 : reachable=true
+@id/accessibility_custom_action_1 : reachable=true
+@id/accessibility_custom_action_10 : reachable=true
+@id/accessibility_custom_action_11 : reachable=true
+@id/accessibility_custom_action_12 : reachable=true
+@id/accessibility_custom_action_13 : reachable=true
+@id/accessibility_custom_action_14 : reachable=true
+@id/accessibility_custom_action_15 : reachable=true
+@id/accessibility_custom_action_16 : reachable=true
+@id/accessibility_custom_action_17 : reachable=true
+@id/accessibility_custom_action_18 : reachable=true
+@id/accessibility_custom_action_19 : reachable=true
+@id/accessibility_custom_action_2 : reachable=true
+@id/accessibility_custom_action_20 : reachable=true
+@id/accessibility_custom_action_21 : reachable=true
+@id/accessibility_custom_action_22 : reachable=true
+@id/accessibility_custom_action_23 : reachable=true
+@id/accessibility_custom_action_24 : reachable=true
+@id/accessibility_custom_action_25 : reachable=true
+@id/accessibility_custom_action_26 : reachable=true
+@id/accessibility_custom_action_27 : reachable=true
+@id/accessibility_custom_action_28 : reachable=true
+@id/accessibility_custom_action_29 : reachable=true
+@id/accessibility_custom_action_3 : reachable=true
+@id/accessibility_custom_action_30 : reachable=true
+@id/accessibility_custom_action_31 : reachable=true
+@id/accessibility_custom_action_4 : reachable=true
+@id/accessibility_custom_action_5 : reachable=true
+@id/accessibility_custom_action_6 : reachable=true
+@id/accessibility_custom_action_7 : reachable=true
+@id/accessibility_custom_action_8 : reachable=true
+@id/accessibility_custom_action_9 : reachable=true
+@id/action_container : reachable=false
+@id/action_divider : reachable=false
+@id/action_image : reachable=false
+@id/action_text : reachable=false
+@id/actions : reachable=false
+@id/androidx_compose_ui_view_composition_context : reachable=true
+@id/async : reachable=false
+@id/blocking : reachable=false
+@id/chronometer : reachable=false
+@id/compose_view_saveable_id_tag : reachable=true
+@id/consume_window_insets_tag : reachable=true
+@id/dialog_button : reachable=false
+@id/edit_text_id : reachable=false
+@id/forever : reachable=false
+@id/hide_graphics_layer_in_inspector_tag : reachable=true
+@id/hide_ime_id : reachable=false
+@id/hide_in_inspector_tag : reachable=true
+@id/icon : reachable=false
+@id/icon_group : reachable=false
+@id/info : reachable=false
+@id/inspection_slot_table_set : reachable=true
+@id/is_pooling_container_tag : reachable=true
+@id/italic : reachable=false
+@id/line1 : reachable=false
+@id/line3 : reachable=false
+@id/nav_controller_view_tag : reachable=false
+@id/normal : reachable=false
+@id/notification_background : reachable=false
+@id/notification_main_column : reachable=false
+@id/notification_main_column_container : reachable=false
+@id/pooling_container_listener_holder_tag : reachable=true
+@id/report_drawn : reachable=true
+@id/right_icon : reachable=false
+@id/right_side : reachable=false
+@id/tag_accessibility_actions : reachable=true
+@id/tag_accessibility_clickable_spans : reachable=true
+@id/tag_accessibility_heading : reachable=true
+@id/tag_accessibility_pane_title : reachable=true
+@id/tag_on_apply_window_listener : reachable=true
+@id/tag_on_receive_content_listener : reachable=false
+@id/tag_on_receive_content_mime_types : reachable=false
+@id/tag_screen_reader_focusable : reachable=true
+@id/tag_state_description : reachable=true
+@id/tag_transition_group : reachable=false
+@id/tag_unhandled_key_event_manager : reachable=true
+@id/tag_unhandled_key_listeners : reachable=true
+@id/tag_window_insets_animation_callback : reachable=true
+@id/text : reachable=false
+@id/text2 : reachable=false
+@id/time : reachable=false
+@id/title : reachable=false
+@id/view_tree_lifecycle_owner : reachable=true
+@id/view_tree_on_back_pressed_dispatcher_owner : reachable=true
+@id/view_tree_saved_state_registry_owner : reachable=true
+@id/view_tree_view_model_store_owner : reachable=true
+@id/wrapped_composition_tag : reachable=true
+@integer/m3c_window_layout_in_display_cutout_mode : reachable=false
+@integer/status_bar_notification_info_maxnum : reachable=false
+@layout/custom_dialog : reachable=false
+@layout/ime_base_split_test_activity : reachable=false
+@layout/ime_secondary_split_test_activity : reachable=false
+@layout/notification_action : reachable=false
+    @style/Widget_Compat_NotificationActionContainer
+    @dimen/notification_action_icon_size
+    @style/Widget_Compat_NotificationActionText
+@layout/notification_action_tombstone : reachable=false
+    @style/Widget_Compat_NotificationActionContainer
+    @dimen/notification_action_icon_size
+    @style/Widget_Compat_NotificationActionText
+@layout/notification_template_custom_big : reachable=false
+    @dimen/notification_large_icon_width
+    @dimen/notification_large_icon_height
+    @layout/notification_template_icon_group
+    @dimen/notification_right_side_padding_top
+    @layout/notification_template_part_time
+    @layout/notification_template_part_chronometer
+    @style/TextAppearance_Compat_Notification_Info
+@layout/notification_template_icon_group : reachable=false
+    @dimen/notification_large_icon_width
+    @dimen/notification_large_icon_height
+    @dimen/notification_big_circle_margin
+    @dimen/notification_right_icon_size
+@layout/notification_template_part_chronometer : reachable=false
+    @style/TextAppearance_Compat_Notification_Time
+@layout/notification_template_part_time : reachable=false
+    @style/TextAppearance_Compat_Notification_Time
+@mipmap/ic_launcher : reachable=true
+    @color/ic_launcher_background
+    @drawable/ic_launcher_foreground
+@mipmap/ic_launcher_round : reachable=false
+    @color/ic_launcher_background
+    @drawable/ic_launcher_foreground
+@string/about_body : reachable=true
+@string/about_license : reachable=true
+@string/about_repo : reachable=true
+@string/about_tagline : reachable=true
+@string/about_title : reachable=true
+@string/action_add_favorite : reachable=false
+@string/action_clear : reachable=false
+@string/action_copy : reachable=true
+@string/action_copy_all : reachable=false
+@string/action_decode : reachable=true
+@string/action_delete : reachable=true
+@string/action_encode : reachable=true
+@string/action_format : reachable=true
+@string/action_generate : reachable=true
+@string/action_minify : reachable=true
+@string/action_remove_favorite : reachable=false
+@string/action_run : reachable=true
+@string/action_share : reachable=true
+@string/action_swap : reachable=false
+@string/action_validate : reachable=true
+@string/androidx_startup : reachable=true
+@string/app_name : reachable=true
+@string/call_notification_answer_action : reachable=false
+@string/call_notification_answer_video_action : reachable=false
+@string/call_notification_decline_action : reachable=false
+@string/call_notification_hang_up_action : reachable=false
+@string/call_notification_incoming_text : reachable=false
+@string/call_notification_ongoing_text : reachable=false
+@string/call_notification_screening_text : reachable=false
+@string/close_drawer : reachable=false
+@string/close_sheet : reachable=false
+@string/copied : reachable=true
+@string/default_error_message : reachable=true
+@string/default_popup_window_title : reachable=true
+@string/dropdown_menu : reachable=false
+@string/empty_input_error : reachable=false
+@string/entropy_bits : reachable=true
+@string/error_generic : reachable=false
+@string/favorites_empty : reachable=true
+@string/favorites_title : reachable=true
+@string/get_started : reachable=true
+@string/hint_input : reachable=true
+@string/hint_output : reachable=false
+@string/history_clear : reachable=true
+@string/history_cleared : reachable=false
+@string/history_empty : reachable=true
+@string/history_run_at : reachable=false
+@string/history_title : reachable=true
+@string/home_greeting : reachable=true
+@string/home_no_recent : reachable=true
+@string/home_quick_tools : reachable=true
+@string/home_recent_activity : reachable=true
+@string/home_stats_favorites : reachable=true
+@string/home_stats_runs : reachable=true
+@string/home_stats_tools : reachable=true
+@string/home_subtitle : reachable=true
+@string/in_progress : reachable=true
+@string/indeterminate : reachable=true
+@string/label_input : reachable=false
+@string/label_result : reachable=true
+@string/lang_arabic : reachable=true
+@string/lang_english : reachable=true
+@string/lang_system : reachable=true
+@string/m3c_bottom_sheet_collapse_description : reachable=false
+@string/m3c_bottom_sheet_dismiss_description : reachable=false
+@string/m3c_bottom_sheet_drag_handle_description : reachable=false
+@string/m3c_bottom_sheet_expand_description : reachable=false
+@string/m3c_bottom_sheet_pane_title : reachable=false
+@string/m3c_date_input_headline : reachable=false
+@string/m3c_date_input_headline_description : reachable=false
+@string/m3c_date_input_invalid_for_pattern : reachable=false
+@string/m3c_date_input_invalid_not_allowed : reachable=false
+@string/m3c_date_input_invalid_year_range : reachable=false
+@string/m3c_date_input_label : reachable=false
+@string/m3c_date_input_no_input_description : reachable=false
+@string/m3c_date_input_title : reachable=false
+@string/m3c_date_picker_headline : reachable=false
+@string/m3c_date_picker_headline_description : reachable=false
+@string/m3c_date_picker_navigate_to_year_description : reachable=false
+@string/m3c_date_picker_no_selection_description : reachable=false
+@string/m3c_date_picker_scroll_to_earlier_years : reachable=false
+@string/m3c_date_picker_scroll_to_later_years : reachable=false
+@string/m3c_date_picker_switch_to_calendar_mode : reachable=false
+@string/m3c_date_picker_switch_to_day_selection : reachable=false
+@string/m3c_date_picker_switch_to_input_mode : reachable=false
+@string/m3c_date_picker_switch_to_next_month : reachable=false
+@string/m3c_date_picker_switch_to_previous_month : reachable=false
+@string/m3c_date_picker_switch_to_year_selection : reachable=false
+@string/m3c_date_picker_title : reachable=false
+@string/m3c_date_picker_today_description : reachable=false
+@string/m3c_date_picker_year_picker_pane_title : reachable=false
+@string/m3c_date_range_input_invalid_range_input : reachable=false
+@string/m3c_date_range_input_title : reachable=false
+@string/m3c_date_range_picker_day_in_range : reachable=false
+@string/m3c_date_range_picker_end_headline : reachable=false
+@string/m3c_date_range_picker_scroll_to_next_month : reachable=false
+@string/m3c_date_range_picker_scroll_to_previous_month : reachable=false
+@string/m3c_date_range_picker_start_headline : reachable=false
+@string/m3c_date_range_picker_title : reachable=false
+@string/m3c_dialog : reachable=false
+@string/m3c_dropdown_menu_collapsed : reachable=false
+@string/m3c_dropdown_menu_expanded : reachable=false
+@string/m3c_dropdown_menu_toggle : reachable=false
+@string/m3c_search_bar_search : reachable=false
+@string/m3c_snackbar_dismiss : reachable=false
+@string/m3c_suggestions_available : reachable=false
+@string/m3c_time_picker_am : reachable=false
+@string/m3c_time_picker_hour : reachable=false
+@string/m3c_time_picker_hour_24h_suffix : reachable=false
+@string/m3c_time_picker_hour_selection : reachable=false
+@string/m3c_time_picker_hour_suffix : reachable=false
+@string/m3c_time_picker_hour_text_field : reachable=false
+@string/m3c_time_picker_minute : reachable=false
+@string/m3c_time_picker_minute_selection : reachable=false
+@string/m3c_time_picker_minute_suffix : reachable=false
+@string/m3c_time_picker_minute_text_field : reachable=false
+@string/m3c_time_picker_period_toggle_description : reachable=false
+@string/m3c_time_picker_pm : reachable=false
+@string/m3c_tooltip_long_press_label : reachable=false
+@string/m3c_tooltip_pane_description : reachable=false
+@string/nav_history : reachable=true
+@string/nav_home : reachable=true
+@string/nav_settings : reachable=true
+@string/nav_tools : reachable=true
+@string/navigation_menu : reachable=false
+@string/next : reachable=true
+@string/not_selected : reachable=true
+@string/onb_body_1 : reachable=true
+@string/onb_body_2 : reachable=true
+@string/onb_body_3 : reachable=true
+@string/onb_title_1 : reachable=true
+@string/onb_title_2 : reachable=true
+@string/onb_title_3 : reachable=true
+@string/password_strength_fair : reachable=true
+@string/password_strength_strong : reachable=true
+@string/password_strength_very_strong : reachable=true
+@string/password_strength_weak : reachable=true
+@string/range_end : reachable=false
+@string/range_start : reachable=false
+@string/section_converters : reachable=true
+@string/section_developer : reachable=true
+@string/section_generators : reachable=true
+@string/section_text : reachable=true
+@string/selected : reachable=true
+@string/settings_about_section : reachable=true
+@string/settings_appearance : reachable=true
+@string/settings_general : reachable=true
+@string/settings_haptics : reachable=true
+@string/settings_haptics_desc : reachable=true
+@string/settings_language : reachable=true
+@string/settings_theme : reachable=false
+@string/settings_title : reachable=true
+@string/settings_version : reachable=true
+@string/skip : reachable=true
+@string/state_empty : reachable=true
+@string/state_off : reachable=true
+@string/state_on : reachable=true
+@string/stats_summary : reachable=true
+@string/status_bar_notification_info_overflow : reachable=false
+@string/switch_role : reachable=true
+@string/tab : reachable=true
+@string/template_percent : reachable=true
+@string/theme_dark : reachable=true
+@string/theme_light : reachable=true
+@string/theme_system : reachable=true
+@string/tool_base64_desc : reachable=true
+@string/tool_base64_name : reachable=true
+@string/tool_hash_desc : reachable=true
+@string/tool_hash_name : reachable=true
+@string/tool_json_desc : reachable=true
+@string/tool_json_name : reachable=true
+@string/tool_lorem_desc : reachable=true
+@string/tool_lorem_name : reachable=true
+@string/tool_pass_desc : reachable=true
+@string/tool_pass_name : reachable=true
+@string/tool_regex_desc : reachable=true
+@string/tool_regex_name : reachable=true
+@string/tool_text_desc : reachable=true
+@string/tool_text_name : reachable=true
+@string/tool_ts_desc : reachable=true
+@string/tool_ts_name : reachable=true
+@string/tool_unit_desc : reachable=true
+@string/tool_unit_name : reachable=true
+@string/tool_url_desc : reachable=true
+@string/tool_url_name : reachable=true
+@string/tool_uuid_desc : reachable=true
+@string/tool_uuid_name : reachable=true
+@string/tools_empty : reachable=true
+@string/tools_search_hint : reachable=true
+@string/tools_title : reachable=true
+@string/tooltip_description : reachable=false
+@string/tooltip_label : reachable=false
+@string/under_development : reachable=false
+@style/DialogWindowTheme : reachable=true
+@style/EdgeToEdgeFloatingDialogTheme : reachable=false
+    @integer/m3c_window_layout_in_display_cutout_mode
+@style/EdgeToEdgeFloatingDialogWindowTheme : reachable=false
+    @style/EdgeToEdgeFloatingDialogTheme
+@style/FloatingDialogTheme : reachable=false
+@style/FloatingDialogWindowTheme : reachable=false
+    @style/FloatingDialogTheme
+@style/TextAppearance_Compat_Notification : reachable=false
+@style/TextAppearance_Compat_Notification_Info : reachable=false
+@style/TextAppearance_Compat_Notification_Line2 : reachable=false
+    @style/TextAppearance_Compat_Notification_Info
+@style/TextAppearance_Compat_Notification_Time : reachable=false
+@style/TextAppearance_Compat_Notification_Title : reachable=false
+@style/Theme_DRSNexus : reachable=true
+@style/Widget_Compat_NotificationActionContainer : reachable=false
+    @drawable/notification_action_background
+@style/Widget_Compat_NotificationActionText : reachable=false
+    @dimen/notification_action_text_size
+    @color/androidx_core_secondary_text_default_material_light
+
+The root reachable resources are:
+ id:accessibility_action_clickable_span:2131034112
+ id:accessibility_custom_action_0:2131034113
+ id:accessibility_custom_action_1:2131034114
+ id:accessibility_custom_action_10:2131034115
+ id:accessibility_custom_action_11:2131034116
+ id:accessibility_custom_action_12:2131034117
+ id:accessibility_custom_action_13:2131034118
+ id:accessibility_custom_action_14:2131034119
+ id:accessibility_custom_action_15:2131034120
+ id:accessibility_custom_action_16:2131034121
+ id:accessibility_custom_action_17:2131034122
+ id:accessibility_custom_action_18:2131034123
+ id:accessibility_custom_action_19:2131034124
+ id:accessibility_custom_action_2:2131034125
+ id:accessibility_custom_action_20:2131034126
+ id:accessibility_custom_action_21:2131034127
+ id:accessibility_custom_action_22:2131034128
+ id:accessibility_custom_action_23:2131034129
+ id:accessibility_custom_action_24:2131034130
+ id:accessibility_custom_action_25:2131034131
+ id:accessibility_custom_action_26:2131034132
+ id:accessibility_custom_action_27:2131034133
+ id:accessibility_custom_action_28:2131034134
+ id:accessibility_custom_action_29:2131034135
+ id:accessibility_custom_action_3:2131034136
+ id:accessibility_custom_action_30:2131034137
+ id:accessibility_custom_action_31:2131034138
+ id:accessibility_custom_action_4:2131034139
+ id:accessibility_custom_action_5:2131034140
+ id:accessibility_custom_action_6:2131034141
+ id:accessibility_custom_action_7:2131034142
+ id:accessibility_custom_action_8:2131034143
+ id:accessibility_custom_action_9:2131034144
+ id:androidx_compose_ui_view_composition_context:2131034150
+ id:compose_view_saveable_id_tag:2131034154
+ id:consume_window_insets_tag:2131034155
+ id:hide_graphics_layer_in_inspector_tag:2131034159
+ id:hide_in_inspector_tag:2131034161
+ id:inspection_slot_table_set:2131034165
+ id:is_pooling_container_tag:2131034166
+ id:pooling_container_listener_holder_tag:2131034175
+ id:report_drawn:2131034176
+ id:tag_accessibility_actions:2131034179
+ id:tag_accessibility_clickable_spans:2131034180
+ id:tag_accessibility_heading:2131034181
+ id:tag_accessibility_pane_title:2131034182
+ id:tag_on_apply_window_listener:2131034183
+ id:tag_screen_reader_focusable:2131034186
+ id:tag_state_description:2131034187
+ id:tag_unhandled_key_event_manager:2131034189
+ id:tag_unhandled_key_listeners:2131034190
+ id:tag_window_insets_animation_callback:2131034191
+ id:view_tree_lifecycle_owner:2131034196
+ id:view_tree_on_back_pressed_dispatcher_owner:2131034197
+ id:view_tree_saved_state_registry_owner:2131034198
+ id:view_tree_view_model_store_owner:2131034199
+ id:wrapped_composition_tag:2131034200
+ mipmap:ic_launcher:2131230720
+ string:about_body:2131296256
+ string:about_license:2131296257
+ string:about_repo:2131296258
+ string:about_tagline:2131296259
+ string:about_title:2131296260
+ string:action_copy:2131296263
+ string:action_decode:2131296265
+ string:action_delete:2131296266
+ string:action_encode:2131296267
+ string:action_format:2131296268
+ string:action_generate:2131296269
+ string:action_minify:2131296270
+ string:action_run:2131296272
+ string:action_share:2131296273
+ string:action_validate:2131296275
+ string:androidx_startup:2131296276
+ string:app_name:2131296277
+ string:copied:2131296287
+ string:default_error_message:2131296288
+ string:default_popup_window_title:2131296289
+ string:entropy_bits:2131296292
+ string:favorites_empty:2131296294
+ string:favorites_title:2131296295
+ string:get_started:2131296296
+ string:hint_input:2131296297
+ string:history_clear:2131296299
+ string:history_empty:2131296301
+ string:history_title:2131296303
+ string:home_greeting:2131296304
+ string:home_no_recent:2131296305
+ string:home_quick_tools:2131296306
+ string:home_recent_activity:2131296307
+ string:home_stats_favorites:2131296308
+ string:home_stats_runs:2131296309
+ string:home_stats_tools:2131296310
+ string:home_subtitle:2131296311
+ string:in_progress:2131296312
+ string:indeterminate:2131296313
+ string:label_result:2131296315
+ string:lang_arabic:2131296316
+ string:lang_english:2131296317
+ string:lang_system:2131296318
+ string:nav_history:2131296376
+ string:nav_home:2131296377
+ string:nav_settings:2131296378
+ string:nav_tools:2131296379
+ string:next:2131296381
+ string:not_selected:2131296382
+ string:onb_body_1:2131296383
+ string:onb_body_2:2131296384
+ string:onb_body_3:2131296385
+ string:onb_title_1:2131296386
+ string:onb_title_2:2131296387
+ string:onb_title_3:2131296388
+ string:password_strength_fair:2131296389
+ string:password_strength_strong:2131296390
+ string:password_strength_very_strong:2131296391
+ string:password_strength_weak:2131296392
+ string:section_converters:2131296395
+ string:section_developer:2131296396
+ string:section_generators:2131296397
+ string:section_text:2131296398
+ string:selected:2131296399
+ string:settings_about_section:2131296400
+ string:settings_appearance:2131296401
+ string:settings_general:2131296402
+ string:settings_haptics:2131296403
+ string:settings_haptics_desc:2131296404
+ string:settings_language:2131296405
+ string:settings_title:2131296407
+ string:settings_version:2131296408
+ string:skip:2131296409
+ string:state_empty:2131296410
+ string:state_off:2131296411
+ string:state_on:2131296412
+ string:stats_summary:2131296413
+ string:switch_role:2131296415
+ string:tab:2131296416
+ string:template_percent:2131296417
+ string:theme_dark:2131296418
+ string:theme_light:2131296419
+ string:theme_system:2131296420
+ string:tool_base64_desc:2131296421
+ string:tool_base64_name:2131296422
+ string:tool_hash_desc:2131296423
+ string:tool_hash_name:2131296424
+ string:tool_json_desc:2131296425
+ string:tool_json_name:2131296426
+ string:tool_lorem_desc:2131296427
+ string:tool_lorem_name:2131296428
+ string:tool_pass_desc:2131296429
+ string:tool_pass_name:2131296430
+ string:tool_regex_desc:2131296431
+ string:tool_regex_name:2131296432
+ string:tool_text_desc:2131296433
+ string:tool_text_name:2131296434
+ string:tool_ts_desc:2131296435
+ string:tool_ts_name:2131296436
+ string:tool_unit_desc:2131296437
+ string:tool_unit_name:2131296438
+ string:tool_url_desc:2131296439
+ string:tool_url_name:2131296440
+ string:tool_uuid_desc:2131296441
+ string:tool_uuid_name:2131296442
+ string:tools_empty:2131296443
+ string:tools_search_hint:2131296444
+ string:tools_title:2131296445
+ style:DialogWindowTheme:2131361792
+ style:Theme_DRSNexus:2131361802
+Unused resources are: 
+ color:androidx_core_ripple_material_light:2130837504
+ color:androidx_core_secondary_text_default_material_light:2130837505
+ color:call_notification_answer_color:2130837506
+ color:call_notification_decline_color:2130837507
+ color:nexus_bg_dark:2130837509
+ color:nexus_bg_light:2130837510
+ color:nexus_blue:2130837511
+ color:notification_action_color_filter:2130837512
+ color:notification_icon_bg_color:2130837513
+ color:vector_tint_color:2130837514
+ color:vector_tint_theme_color:2130837515
+ dimen:compat_button_inset_horizontal_material:2130903040
+ dimen:compat_button_inset_vertical_material:2130903041
+ dimen:compat_button_padding_horizontal_material:2130903042
+ dimen:compat_button_padding_vertical_material:2130903043
+ dimen:compat_control_corner_material:2130903044
+ dimen:compat_notification_large_icon_max_height:2130903045
+ dimen:compat_notification_large_icon_max_width:2130903046
+ dimen:notification_action_icon_size:2130903047
+ dimen:notification_action_text_size:2130903048
+ dimen:notification_big_circle_margin:2130903049
+ dimen:notification_content_margin_start:2130903050
+ dimen:notification_large_icon_height:2130903051
+ dimen:notification_large_icon_width:2130903052
+ dimen:notification_main_column_padding_top:2130903053
+ dimen:notification_media_narrow_margin:2130903054
+ dimen:notification_right_icon_size:2130903055
+ dimen:notification_right_side_padding_top:2130903056
+ dimen:notification_small_icon_background_padding:2130903057
+ dimen:notification_small_icon_size_as_large:2130903058
+ dimen:notification_subtext_size:2130903059
+ dimen:notification_top_pad:2130903060
+ dimen:notification_top_pad_large_text:2130903061
+ drawable:ic_call_answer:2130968576
+ drawable:ic_call_answer_low:2130968577
+ drawable:ic_call_answer_video:2130968578
+ drawable:ic_call_answer_video_low:2130968579
+ drawable:ic_call_decline:2130968580
+ drawable:ic_call_decline_low:2130968581
+ drawable:notification_action_background:2130968583
+ drawable:notification_bg:2130968584
+ drawable:notification_bg_low:2130968585
+ drawable:notification_bg_low_normal:2130968586
+ drawable:notification_bg_low_pressed:2130968587
+ drawable:notification_bg_normal:2130968588
+ drawable:notification_bg_normal_pressed:2130968589
+ drawable:notification_icon_background:2130968590
+ drawable:notification_oversize_large_icon_bg:2130968591
+ drawable:notification_template_icon_bg:2130968592
+ drawable:notification_template_icon_low_bg:2130968593
+ drawable:notification_tile_bg:2130968594
+ drawable:notify_panel_notification_icon_bg:2130968595
+ id:action_container:2131034145
+ id:action_divider:2131034146
+ id:action_image:2131034147
+ id:action_text:2131034148
+ id:actions:2131034149
+ id:async:2131034151
+ id:blocking:2131034152
+ id:chronometer:2131034153
+ id:dialog_button:2131034156
+ id:edit_text_id:2131034157
+ id:forever:2131034158
+ id:hide_ime_id:2131034160
+ id:icon:2131034162
+ id:icon_group:2131034163
+ id:info:2131034164
+ id:italic:2131034167
+ id:line1:2131034168
+ id:line3:2131034169
+ id:nav_controller_view_tag:2131034170
+ id:normal:2131034171
+ id:notification_background:2131034172
+ id:notification_main_column:2131034173
+ id:notification_main_column_container:2131034174
+ id:right_icon:2131034177
+ id:right_side:2131034178
+ id:tag_on_receive_content_listener:2131034184
+ id:tag_on_receive_content_mime_types:2131034185
+ id:tag_transition_group:2131034188
+ id:text:2131034192
+ id:text2:2131034193
+ id:time:2131034194
+ id:title:2131034195
+ integer:m3c_window_layout_in_display_cutout_mode:2131099648
+ integer:status_bar_notification_info_maxnum:2131099649
+ layout:custom_dialog:2131165184
+ layout:ime_base_split_test_activity:2131165185
+ layout:ime_secondary_split_test_activity:2131165186
+ layout:notification_action:2131165187
+ layout:notification_action_tombstone:2131165188
+ layout:notification_template_custom_big:2131165189
+ layout:notification_template_icon_group:2131165190
+ layout:notification_template_part_chronometer:2131165191
+ layout:notification_template_part_time:2131165192
+ mipmap:ic_launcher_round:2131230721
+ string:action_add_favorite:2131296261
+ string:action_clear:2131296262
+ string:action_copy_all:2131296264
+ string:action_remove_favorite:2131296271
+ string:action_swap:2131296274
+ string:call_notification_answer_action:2131296278
+ string:call_notification_answer_video_action:2131296279
+ string:call_notification_decline_action:2131296280
+ string:call_notification_hang_up_action:2131296281
+ string:call_notification_incoming_text:2131296282
+ string:call_notification_ongoing_text:2131296283
+ string:call_notification_screening_text:2131296284
+ string:close_drawer:2131296285
+ string:close_sheet:2131296286
+ string:dropdown_menu:2131296290
+ string:empty_input_error:2131296291
+ string:error_generic:2131296293
+ string:hint_output:2131296298
+ string:history_cleared:2131296300
+ string:history_run_at:2131296302
+ string:label_input:2131296314
+ string:m3c_bottom_sheet_collapse_description:2131296319
+ string:m3c_bottom_sheet_dismiss_description:2131296320
+ string:m3c_bottom_sheet_drag_handle_description:2131296321
+ string:m3c_bottom_sheet_expand_description:2131296322
+ string:m3c_bottom_sheet_pane_title:2131296323
+ string:m3c_date_input_headline:2131296324
+ string:m3c_date_input_headline_description:2131296325
+ string:m3c_date_input_invalid_for_pattern:2131296326
+ string:m3c_date_input_invalid_not_allowed:2131296327
+ string:m3c_date_input_invalid_year_range:2131296328
+ string:m3c_date_input_label:2131296329
+ string:m3c_date_input_no_input_description:2131296330
+ string:m3c_date_input_title:2131296331
+ string:m3c_date_picker_headline:2131296332
+ string:m3c_date_picker_headline_description:2131296333
+ string:m3c_date_picker_navigate_to_year_description:2131296334
+ string:m3c_date_picker_no_selection_description:2131296335
+ string:m3c_date_picker_scroll_to_earlier_years:2131296336
+ string:m3c_date_picker_scroll_to_later_years:2131296337
+ string:m3c_date_picker_switch_to_calendar_mode:2131296338
+ string:m3c_date_picker_switch_to_day_selection:2131296339
+ string:m3c_date_picker_switch_to_input_mode:2131296340
+ string:m3c_date_picker_switch_to_next_month:2131296341
+ string:m3c_date_picker_switch_to_previous_month:2131296342
+ string:m3c_date_picker_switch_to_year_selection:2131296343
+ string:m3c_date_picker_title:2131296344
+ string:m3c_date_picker_today_description:2131296345
+ string:m3c_date_picker_year_picker_pane_title:2131296346
+ string:m3c_date_range_input_invalid_range_input:2131296347
+ string:m3c_date_range_input_title:2131296348
+ string:m3c_date_range_picker_day_in_range:2131296349
+ string:m3c_date_range_picker_end_headline:2131296350
+ string:m3c_date_range_picker_scroll_to_next_month:2131296351
+ string:m3c_date_range_picker_scroll_to_previous_month:2131296352
+ string:m3c_date_range_picker_start_headline:2131296353
+ string:m3c_date_range_picker_title:2131296354
+ string:m3c_dialog:2131296355
+ string:m3c_dropdown_menu_collapsed:2131296356
+ string:m3c_dropdown_menu_expanded:2131296357
+ string:m3c_dropdown_menu_toggle:2131296358
+ string:m3c_search_bar_search:2131296359
+ string:m3c_snackbar_dismiss:2131296360
+ string:m3c_suggestions_available:2131296361
+ string:m3c_time_picker_am:2131296362
+ string:m3c_time_picker_hour:2131296363
+ string:m3c_time_picker_hour_24h_suffix:2131296364
+ string:m3c_time_picker_hour_selection:2131296365
+ string:m3c_time_picker_hour_suffix:2131296366
+ string:m3c_time_picker_hour_text_field:2131296367
+ string:m3c_time_picker_minute:2131296368
+ string:m3c_time_picker_minute_selection:2131296369
+ string:m3c_time_picker_minute_suffix:2131296370
+ string:m3c_time_picker_minute_text_field:2131296371
+ string:m3c_time_picker_period_toggle_description:2131296372
+ string:m3c_time_picker_pm:2131296373
+ string:m3c_tooltip_long_press_label:2131296374
+ string:m3c_tooltip_pane_description:2131296375
+ string:navigation_menu:2131296380
+ string:range_end:2131296393
+ string:range_start:2131296394
+ string:settings_theme:2131296406
+ string:status_bar_notification_info_overflow:2131296414
+ string:tooltip_description:2131296446
+ string:tooltip_label:2131296447
+ string:under_development:2131296448
+ style:EdgeToEdgeFloatingDialogTheme:2131361793
+ style:EdgeToEdgeFloatingDialogWindowTheme:2131361794
+ style:FloatingDialogTheme:2131361795
+ style:FloatingDialogWindowTheme:2131361796
+ style:TextAppearance_Compat_Notification:2131361797
+ style:TextAppearance_Compat_Notification_Info:2131361798
+ style:TextAppearance_Compat_Notification_Line2:2131361799
+ style:TextAppearance_Compat_Notification_Time:2131361800
+ style:TextAppearance_Compat_Notification_Title:2131361801
+ style:Widget_Compat_NotificationActionContainer:2131361803
+ style:Widget_Compat_NotificationActionText:2131361804
