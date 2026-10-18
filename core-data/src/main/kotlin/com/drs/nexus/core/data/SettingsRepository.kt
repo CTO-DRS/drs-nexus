@@ -76,6 +76,8 @@ class ToolRepository(
     }
     suspend fun deleteRun(id: Long) = runDao.deleteById(id)
     suspend fun clearHistory() = runDao.clearAll()
+    suspend fun allRunsOnce() = runDao.allRunsOnce()
+    suspend fun favoritesOnce() = favoriteDao.allOnce()
 
     fun favorites(): Flow<List<FavoriteEntity>> = favoriteDao.all()
     fun isFavorite(toolId: String): Flow<Boolean> = favoriteDao.isFavorite(toolId)

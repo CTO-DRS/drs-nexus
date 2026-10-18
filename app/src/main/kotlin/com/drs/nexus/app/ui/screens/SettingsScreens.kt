@@ -129,6 +129,11 @@ fun SettingsScreen(container: AppContainer, navController: NavHostController) {
             }
         }
 
+        SettingsGroupTitle(stringResource(R.string.settings_data))
+        SettingsCard {
+            com.drs.nexus.app.data.ExportHistoryRow(container)
+        }
+
         SettingsGroupTitle(stringResource(R.string.settings_about_section))
         SettingsCard {
             LinkRow(

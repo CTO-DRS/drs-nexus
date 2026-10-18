@@ -78,6 +78,8 @@
     <string name="tool_bmi_desc">Body mass index with WHO categories and healthy range</string>
     <string name="tool_datediff_name">Date Difference</string>
     <string name="tool_datediff_desc">Days between dates, weekdays and date arithmetic</string>
+    <string name="tool_currency_name">Currency Converter</string>
+    <string name="tool_currency_desc">Offline conversions for 22 currencies from a built-in rate table</string>
 
     <!-- Common tool actions -->
     <string name="action_run">Run</string>
@@ -181,4 +183,27 @@
     <string name="datediff_months">Months</string>
     <string name="datediff_years">Years</string>
     <string name="datediff_weekdays">Weekdays</string>
+
+    <!-- Currency (offline) -->
+    <string name="currency_static_notice">Offline rates — static reference table (%1$s). Values are indicative.</string>
+    <string name="currency_from">From</string>
+    <string name="currency_to">To</string>
+    <string name="currency_swap">Swap</string>
+    <string name="currency_rate_line">1 %2$s = %1$s %3$s</string>
+
+    <!-- Settings: data -->
+    <string name="settings_data">Data</string>
+    <string name="settings_export_title">Export history (JSON)</string>
+    <string name="settings_export_desc">Save every tool run and favorite as a JSON file anywhere you choose</string>
+    <string name="settings_export_button">Export</string>
+    <string name="settings_export_done">Exported %1$d runs — file saved</string>
+    <string name="settings_export_failed">Export failed: %1$s</string>
+
+    <!-- Home screen widget -->
+    <string name="widget_name">DRS Nexus stats</string>
+    <string name="widget_desc">Live tool usage stats from DRS Nexus</string>
+    <string name="widget_runs_label">Total runs</string>
+    <string name="widget_favorites_label">Favorites</string>
+    <string name="widget_no_runs">No runs yet — open the app</string>
+    <string name="widget_last_used">Last: %1$s</string>
 </resources>

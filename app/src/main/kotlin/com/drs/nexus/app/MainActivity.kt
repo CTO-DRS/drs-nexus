@@ -55,6 +55,12 @@ class MainActivity : ComponentActivity() {
         return base.createConfigurationContext(config)
     }
 
+    override fun onResume() {
+        super.onResume()
+        // Widget data may be stale while the app was in the background; refresh on return.
+        com.drs.nexus.app.widget.NexusWidgetProvider.updateAll(this)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         enableEdgeToEdge()
         super.onCreate(savedInstanceState)

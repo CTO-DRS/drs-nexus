@@ -26,6 +26,9 @@ interface ToolRunDao {
 
     @Query("SELECT COUNT(*) FROM tool_runs")
     suspend fun count(): Int
+
+    @Query("SELECT * FROM tool_runs ORDER BY executedAt DESC")
+    suspend fun allRunsOnce(): List<ToolRunEntity>
 }
 
 @Dao
@@ -44,4 +47,10 @@ interface FavoriteDao {
 
     @Query("DELETE FROM favorites WHERE toolId = :toolId")
     suspend fun removeById(toolId: String)
+
+    @Query("SELECT * FROM favorites ORDER BY pinnedAt DESC")
+    suspend fun allOnce(): List<FavoriteEntity>
+
+    @Query("SELECT COUNT(*) FROM favorites")
+    suspend fun count(): Int
 }

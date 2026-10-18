@@ -21,6 +21,7 @@ import androidx.compose.material.icons.filled.Link
 import androidx.compose.material.icons.filled.Lock
 import androidx.compose.material.icons.filled.MonitorWeight
 import androidx.compose.material.icons.filled.Notes
+import androidx.compose.material.icons.filled.Payments
 import androidx.compose.material.icons.filled.Percent
 import androidx.compose.material.icons.filled.Palette
 import androidx.compose.material.icons.filled.QrCode2
@@ -69,6 +70,7 @@ fun iconForKey(key: String): ImageVector = when (key) {
     "account_balance" -> Icons.Filled.AccountBalance
     "monitor_weight" -> Icons.Filled.MonitorWeight
     "event" -> Icons.Filled.Event
+    "payments" -> Icons.Filled.Payments
     else -> Icons.Filled.TextFields
 }
 

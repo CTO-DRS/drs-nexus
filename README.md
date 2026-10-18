@@ -1,6 +1,6 @@
 # DRS Nexus
 
-**DRS Nexus** is a native Android toolkit that brings nineteen real, fully-offline developer utilities into one polished, bilingual (Arabic/English) app.
+**DRS Nexus** is a native Android toolkit that brings twenty real, fully-offline developer utilities into one polished, bilingual (Arabic/English) app.
 
 Every tool runs 100% on-device. No accounts, no tracking, no network calls for tool execution — the only permissions requested are `INTERNET` and `ACCESS_NETWORK_STATE`.
 
@@ -27,12 +27,15 @@ Every tool runs 100% on-device. No accounts, no tracking, no network calls for t
 | Loan Calculator | Monthly payment (EMI), total interest, payment count |
 | BMI Calculator | Body mass index with WHO categories and healthy range |
 | Date Difference | Days/weekdays between dates, date arithmetic |
+| Currency Converter | Offline conversions for 22 currencies (built-in static rate table) |
 
 ## Architecture
 
 - **Kotlin 2.0.21** + **Jetpack Compose** (Material 3), Navigation Compose, single activity
 - **Multi-module Gradle**: `:core-common` (pure-Kotlin tool engines + unit tests), `:core-data` (Room + DataStore), `:app` (UI)
 - **Room database**: real usage history + favorites, persisted locally
+- **Home-screen AppWidget**: live runs/favorites stats straight from Room
+- **History export**: full JSON export of usage data via SAF (no storage permission)
 - **DataStore**: theme, language, onboarding and haptics settings
 - **Manual DI** via an `AppContainer` — no framework magic
 - Full **RTL support** with a complete Arabic and English string catalog
@@ -51,9 +54,9 @@ Requirements: JDK 17, Android SDK 35.
 ## Project layout
 
 ```
-core-common/   # pure Kotlin tool engines + 88 unit tests
+core-common/   # pure Kotlin tool engines + 98 unit tests
 core-data/     # Room entities/DAOs, DataStore settings repository
-app/           # Compose UI: 19 tool screens + home/tools/history/favorites/settings
+app/           # Compose UI: 20 tool screens + home/tools/history/favorites/settings + AppWidget
 ```
 
 ## License
