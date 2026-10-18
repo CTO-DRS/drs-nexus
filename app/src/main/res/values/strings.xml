@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DRS Nexus</string>
+
+    <!-- Splash / Onboarding -->
+    <string name="onb_title_1">Every tool. One nexus.</string>
+    <string name="onb_body_1">Eleven real utilities — JSON, hashing, encoding, converters and more — all working fully offline, right on your device.</string>
+    <string name="onb_title_2">Built for privacy</string>
+    <string name="onb_body_2">Your data never leaves your phone. No accounts, no tracking, no telemetry. Everything runs locally and instantly.</string>
+    <string name="onb_title_3">History that works for you</string>
+    <string name="onb_body_3">Every run is saved automatically, pin favorites, and continue where you left off — all stored locally on device.</string>
+    <string name="get_started">Get Started</string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+
+    <!-- Home -->
+    <string name="home_greeting">DRS Nexus</string>
+    <string name="home_subtitle">Professional offline toolkit</string>
+    <string name="home_recent_activity">Recent Activity</string>
+    <string name="home_quick_tools">Quick Tools</string>
+    <string name="home_no_recent">No recent runs yet. Open a tool and it will appear here automatically.</string>
+    <string name="home_stats_tools">Tools</string>
+    <string name="home_stats_runs">Runs</string>
+    <string name="home_stats_favorites">Favorites</string>
+
+    <!-- Nav -->
+    <string name="nav_home">Home</string>
+    <string name="nav_tools">Tools</string>
+    <string name="nav_history">History</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Tools list -->
+    <string name="tools_title">Tools</string>
+    <string name="tools_search_hint">Search tools…</string>
+    <string name="tools_empty">No tools match your search.</string>
+    <string name="section_developer">Developer</string>
+    <string name="section_converters">Converters</string>
+    <string name="section_generators">Generators</string>
+    <string name="section_text">Text</string>
+
+    <!-- Tool descriptions -->
+    <string name="tool_json_name">JSON Formatter</string>
+    <string name="tool_json_desc">Format, minify and validate JSON with detailed error positions</string>
+    <string name="tool_base64_name">Base64</string>
+    <string name="tool_base64_desc">Encode and decode Base64 with URL-safe and padding options</string>
+    <string name="tool_hash_name">Hash Calculator</string>
+    <string name="tool_hash_desc">SHA-256, SHA-1, SHA-512 and MD5 digests with verification</string>
+    <string name="tool_regex_name">Regex Tester</string>
+    <string name="tool_regex_desc">Live regular-expression testing with match highlighting</string>
+    <string name="tool_url_name">URL Encode/Decode</string>
+    <string name="tool_url_desc">Percent-encoding and decoding for URLs and query strings</string>
+    <string name="tool_ts_name">Timestamp Converter</string>
+    <string name="tool_ts_desc">Convert Unix epochs to readable dates in any timezone</string>
+    <string name="tool_unit_name">Unit Converter</string>
+    <string name="tool_unit_desc">Length, weight, temperature and data-size conversions</string>
+    <string name="tool_uuid_name">UUID Generator</string>
+    <string name="tool_uuid_desc">Bulk RFC 4122 v4 identifiers with formatting options</string>
+    <string name="tool_pass_name">Password Generator</string>
+    <string name="tool_pass_desc">Cryptographically-secure passwords with entropy analysis</string>
+    <string name="tool_lorem_name">Lorem Ipsum</string>
+    <string name="tool_lorem_desc">Placeholder text as paragraphs, sentences or words</string>
+    <string name="tool_text_name">Text Utilities</string>
+    <string name="tool_text_desc">Case conversion, statistics, reverse and normalization</string>
+
+    <!-- Common tool actions -->
+    <string name="action_run">Run</string>
+    <string name="action_copy">Copy</string>
+    <string name="action_copy_all">Copy All</string>
+    <string name="action_share">Share</string>
+    <string name="action_clear">Clear</string>
+    <string name="action_swap">Swap</string>
+    <string name="action_encode">Encode</string>
+    <string name="action_decode">Decode</string>
+    <string name="action_format">Format</string>
+    <string name="action_minify">Minify</string>
+    <string name="action_validate">Validate</string>
+    <string name="action_generate">Generate</string>
+    <string name="action_add_favorite">Add to favorites</string>
+    <string name="action_remove_favorite">Remove from favorites</string>
+    <string name="action_delete">Delete</string>
+    <string name="hint_input">Enter input text…</string>
+    <string name="hint_output">Result</string>
+    <string name="copied">Copied to clipboard</string>
+    <string name="empty_input_error">Please enter some input first</string>
+    <string name="label_result">Result</string>
+    <string name="label_input">Input</string>
+
+    <!-- History -->
+    <string name="history_title">History</string>
+    <string name="history_empty">Nothing here yet.\nTools you use will be recorded here automatically.</string>
+    <string name="history_clear">Clear history</string>
+    <string name="history_cleared">History cleared</string>
+    <string name="history_run_at">Run</string>
+
+    <!-- Favorites -->
+    <string name="favorites_title">Favorites</string>
+    <string name="favorites_empty">No favorites yet.\nTap the star on any tool to pin it here.</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_appearance">Appearance</string>
+    <string name="settings_theme">Theme</string>
+    <string name="theme_system">System</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="settings_language">Language</string>
+    <string name="lang_system">System</string>
+    <string name="lang_arabic">Arabic</string>
+    <string name="lang_english">English</string>
+    <string name="settings_general">General</string>
+    <string name="settings_haptics">Haptic feedback</string>
+    <string name="settings_haptics_desc">Vibrate on copy and success actions</string>
+    <string name="settings_about_section">About</string>
+    <string name="settings_version">Version</string>
+
+    <!-- About -->
+    <string name="about_title">About</string>
+    <string name="about_tagline">DRS Nexus — a professional, fully-offline developer toolkit.</string>
+    <string name="about_body">DRS Nexus brings eleven essential developer utilities into one native Android app. Every tool runs entirely on-device: JSON parsing uses a real parser, hashing uses the platform security provider, and passwords come from the system secure random source. Your history and favorites live in a local database and nothing is ever uploaded.\n\nBuilt with Kotlin and Jetpack Compose, designed with a native look and feel, and shipped with a complete bilingual interface in Arabic and English including full RTL support.</string>
+    <string name="about_repo">Source code on GitHub</string>
+    <string name="about_license">Released under the MIT License.</string>
+
+    <!-- Errors / status -->
+    <string name="error_generic">Something went wrong</string>
+    <string name="under_development">This feature is under development</string>
+    <string name="password_strength_weak">Weak</string>
+    <string name="password_strength_fair">Fair</string>
+    <string name="password_strength_strong">Strong</string>
+    <string name="password_strength_very_strong">Very Strong</string>
+    <string name="entropy_bits">Entropy</string>
+    <string name="stats_summary">Stats</string>
+</resources>

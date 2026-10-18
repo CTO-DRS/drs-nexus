@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.drs.nexus.core.tools.EncodingToolsTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-10-18T18:57:46" hostname="c-6ad50ca9-145cf406-1408101f9a94" time="0.026">
+  <properties/>
+  <testcase name="base64 urlsafe variant" classname="com.drs.nexus.core.tools.EncodingToolsTest" time="0.001"/>
+  <testcase name="sha512 length and verify" classname="com.drs.nexus.core.tools.EncodingToolsTest" time="0.005"/>
+  <testcase name="md5 known vector" classname="com.drs.nexus.core.tools.EncodingToolsTest" time="0.0"/>
+  <testcase name="url encode decode round trip" classname="com.drs.nexus.core.tools.EncodingToolsTest" time="0.001"/>
+  <testcase name="base64 invalid input fails" classname="com.drs.nexus.core.tools.EncodingToolsTest" time="0.001"/>
+  <testcase name="url encode space handling" classname="com.drs.nexus.core.tools.EncodingToolsTest" time="0.001"/>
+  <testcase name="sha256 known vector" classname="com.drs.nexus.core.tools.EncodingToolsTest" time="0.001"/>
+  <testcase name="sha1 known vector" classname="com.drs.nexus.core.tools.EncodingToolsTest" time="0.001"/>
+  <testcase name="base64 round trip ascii" classname="com.drs.nexus.core.tools.EncodingToolsTest" time="0.001"/>
+  <testcase name="base64 without padding" classname="com.drs.nexus.core.tools.EncodingToolsTest" time="0.0"/>
+  <testcase name="hashAll returns four algorithms" classname="com.drs.nexus.core.tools.EncodingToolsTest" time="0.001"/>
+  <testcase name="url decode invalid fails" classname="com.drs.nexus.core.tools.EncodingToolsTest" time="0.0"/>
+  <testcase name="base64 round trip utf8 arabic" classname="com.drs.nexus.core.tools.EncodingToolsTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

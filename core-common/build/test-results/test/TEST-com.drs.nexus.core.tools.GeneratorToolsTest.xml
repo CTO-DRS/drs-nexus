@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.drs.nexus.core.tools.GeneratorToolsTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-10-18T18:57:46" hostname="c-6ad50ca9-145cf406-1408101f9a94" time="0.025">
+  <properties/>
+  <testcase name="password length respected" classname="com.drs.nexus.core.tools.GeneratorToolsTest" time="0.004"/>
+  <testcase name="entropy and strength" classname="com.drs.nexus.core.tools.GeneratorToolsTest" time="0.0"/>
+  <testcase name="password with no classes throws" classname="com.drs.nexus.core.tools.GeneratorToolsTest" time="0.0"/>
+  <testcase name="password exclude ambiguous" classname="com.drs.nexus.core.tools.GeneratorToolsTest" time="0.007"/>
+  <testcase name="password digits only when configured" classname="com.drs.nexus.core.tools.GeneratorToolsTest" time="0.004"/>
+  <testcase name="uuid v4 correct format" classname="com.drs.nexus.core.tools.GeneratorToolsTest" time="0.002"/>
+  <testcase name="uuid options uppercase no hyphens braces" classname="com.drs.nexus.core.tools.GeneratorToolsTest" time="0.0"/>
+  <testcase name="uuid version detection" classname="com.drs.nexus.core.tools.GeneratorToolsTest" time="0.001"/>
+  <testcase name="password contains required classes" classname="com.drs.nexus.core.tools.GeneratorToolsTest" time="0.001"/>
+  <testcase name="uuid unique in bulk" classname="com.drs.nexus.core.tools.GeneratorToolsTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

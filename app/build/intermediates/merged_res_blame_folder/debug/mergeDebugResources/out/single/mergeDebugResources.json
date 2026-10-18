@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.drs.nexus.app-debug-61:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.drs.nexus.app-main-63:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.drs.nexus.app-debug-61:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.drs.nexus.app-main-63:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.drs.nexus.app-debug-61:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.drs.nexus.app-main-63:/drawable/ic_launcher_foreground.xml"
+    }
+]

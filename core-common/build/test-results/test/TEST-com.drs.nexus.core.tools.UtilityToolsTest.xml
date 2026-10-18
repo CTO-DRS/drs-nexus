@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.drs.nexus.core.tools.UtilityToolsTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2026-10-18T18:57:46" hostname="c-6ad50ca9-145cf406-1408101f9a94" time="0.08">
+  <properties/>
+  <testcase name="case conversions" classname="com.drs.nexus.core.tools.UtilityToolsTest" time="0.031"/>
+  <testcase name="epoch millis auto detection" classname="com.drs.nexus.core.tools.UtilityToolsTest" time="0.004"/>
+  <testcase name="unit conversion temperature" classname="com.drs.nexus.core.tools.UtilityToolsTest" time="0.002"/>
+  <testcase name="arabic text preserved in case conversion" classname="com.drs.nexus.core.tools.UtilityToolsTest" time="0.0"/>
+  <testcase name="unit conversion data" classname="com.drs.nexus.core.tools.UtilityToolsTest" time="0.0"/>
+  <testcase name="now returns plausible epoch" classname="com.drs.nexus.core.tools.UtilityToolsTest" time="0.0"/>
+  <testcase name="reverse and space cleanup" classname="com.drs.nexus.core.tools.UtilityToolsTest" time="0.001"/>
+  <testcase name="epoch to date conversion" classname="com.drs.nexus.core.tools.UtilityToolsTest" time="0.0"/>
+  <testcase name="cross category rejected" classname="com.drs.nexus.core.tools.UtilityToolsTest" time="0.0"/>
+  <testcase name="regex case insensitive flag" classname="com.drs.nexus.core.tools.UtilityToolsTest" time="0.013"/>
+  <testcase name="text stats counts correctly" classname="com.drs.nexus.core.tools.UtilityToolsTest" time="0.002"/>
+  <testcase name="regex replacement preview" classname="com.drs.nexus.core.tools.UtilityToolsTest" time="0.0"/>
+  <testcase name="unit conversion length" classname="com.drs.nexus.core.tools.UtilityToolsTest" time="0.0"/>
+  <testcase name="regex finds matches with positions" classname="com.drs.nexus.core.tools.UtilityToolsTest" time="0.0"/>
+  <testcase name="lorem generates paragraphs sentences words" classname="com.drs.nexus.core.tools.UtilityToolsTest" time="0.014"/>
+  <testcase name="epoch invalid input fails" classname="com.drs.nexus.core.tools.UtilityToolsTest" time="0.001"/>
+  <testcase name="regex invalid pattern fails" classname="com.drs.nexus.core.tools.UtilityToolsTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

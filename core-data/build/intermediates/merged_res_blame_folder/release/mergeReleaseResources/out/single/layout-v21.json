@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.drs.nexus.core.data.core-data-release-18:/layout-v21/notification_template_custom_big.xml",
+        "source": "com.drs.nexus.core.data.core-data-core-1.15.0-1:/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "com.drs.nexus.core.data.core-data-release-18:/layout-v21/notification_template_icon_group.xml",
+        "source": "com.drs.nexus.core.data.core-data-core-1.15.0-1:/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "com.drs.nexus.core.data.core-data-release-18:/layout-v21/notification_action.xml",
+        "source": "com.drs.nexus.core.data.core-data-core-1.15.0-1:/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "com.drs.nexus.core.data.core-data-release-18:/layout-v21/notification_action_tombstone.xml",
+        "source": "com.drs.nexus.core.data.core-data-core-1.15.0-1:/layout-v21/notification_action_tombstone.xml"
+    }
+]
