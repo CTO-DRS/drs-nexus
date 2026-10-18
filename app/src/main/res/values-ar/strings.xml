@@ -36,6 +36,7 @@
     <string name="section_developer">المطوّر</string>
     <string name="section_converters">المحوّلات</string>
     <string name="section_generators">المولّدات</string>
+    <string name="section_calculators">الحاسبات</string>
     <string name="section_text">النصوص</string>
 
     <!-- Tool descriptions -->
@@ -61,6 +62,22 @@
     <string name="tool_lorem_desc">نصوص بديلة كفقرات أو جمل أو كلمات</string>
     <string name="tool_text_name">أدوات النصوص</string>
     <string name="tool_text_desc">تحويل حالة الأحرف والإحصاء والعكس والتنظيف</string>
+    <string name="tool_jwt_name">مفكك JWT</string>
+    <string name="tool_jwt_desc">فك التوكنات وعرض الحقول والتحقق من حالة الانتهاء</string>
+    <string name="tool_base_name">محوّل الأنظمة العددية</string>
+    <string name="tool_base_desc">ثنائي وثماني وعشري وسداسي عشري وأي أساس من ٢ إلى ٣٦</string>
+    <string name="tool_color_name">محوّل الألوان</string>
+    <string name="tool_color_desc">تحويل HEX وRGB وHSL مع معاينة حية للون</string>
+    <string name="tool_qr_name">مولّد QR</string>
+    <string name="tool_qr_desc">إنشاء رموز QR من نص أو روابط وحفظها كصور PNG</string>
+    <string name="tool_percent_name">حاسبة النسب المئوية</string>
+    <string name="tool_percent_desc">نسبة من قيمة وحصة من المجموع ونسبة التغيّر</string>
+    <string name="tool_loan_name">حاسبة القروض</string>
+    <string name="tool_loan_desc">القسط الشهري وإجمالي الفوائد وجدول السداد</string>
+    <string name="tool_bmi_name">حاسبة كتلة الجسم</string>
+    <string name="tool_bmi_desc">مؤشر كتلة الجسم مع تصنيف WHO والوزن الصحي</string>
+    <string name="tool_datediff_name">الفرق بين التواريخ</string>
+    <string name="tool_datediff_desc">الأيام بين تاريخين وأيام العمل وعمليات التواريخ</string>
 
     <!-- Common tool actions -->
     <string name="action_run">تشغيل</string>
@@ -129,4 +146,39 @@
     <string name="password_strength_very_strong">قوية جداً</string>
     <string name="entropy_bits">الإنتروبيا</string>
     <string name="stats_summary">إحصاءات</string>
+
+    <!-- New feature pack -->
+    <string name="action_convert">تحويل</string>
+    <string name="action_calculate">احسب</string>
+    <string name="jwt_valid">الحالة: صالح (لم ينتهِ)</string>
+    <string name="jwt_expired">الحالة: منتهي</string>
+    <string name="jwt_no_expiry">الحالة: بلا مدة انتهاء</string>
+    <string name="jwt_header">الترويسة</string>
+    <string name="jwt_payload">الحمولة</string>
+    <string name="base_input_base">أساس الإدخال</string>
+    <string name="base_custom_base">أساس مخصص</string>
+    <string name="base_binary">ثنائي (أساس ٢)</string>
+    <string name="base_octal">ثماني (أساس ٨)</string>
+    <string name="base_decimal">عشري (أساس ١٠)</string>
+    <string name="base_hex">سداسي عشري (أساس ١٦)</string>
+    <string name="color_alpha">الشفافية</string>
+    <string name="color_text_on_color">أفضل لون للنص فوق هذه الخلفية</string>
+    <string name="qr_save_png">حفظ PNG</string>
+    <string name="qr_saved">تم حفظ رمز QR</string>
+    <string name="loan_monthly">القسط الشهري</string>
+    <string name="loan_total_paid">إجمالي المدفوع</string>
+    <string name="loan_total_interest">إجمالي الفوائد</string>
+    <string name="loan_months">عدد الأقساط</string>
+    <string name="bmi_metric">متري (كجم/سم)</string>
+    <string name="bmi_imperial">إمبراطوري (رطل/بوصة)</string>
+    <string name="bmi_underweight">نقص الوزن</string>
+    <string name="bmi_normal">وزن طبيعي</string>
+    <string name="bmi_overweight">زيادة الوزن</string>
+    <string name="bmi_obese">سمنة</string>
+    <string name="bmi_healthy_range">نطاق الوزن الصحي</string>
+    <string name="datediff_result">الفرق</string>
+    <string name="datediff_weeks">أسابيع</string>
+    <string name="datediff_months">أشهر</string>
+    <string name="datediff_years">سنوات</string>
+    <string name="datediff_weekdays">أيام العمل</string>
 </resources>

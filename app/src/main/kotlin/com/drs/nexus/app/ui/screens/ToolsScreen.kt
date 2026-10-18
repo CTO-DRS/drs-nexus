@@ -176,5 +176,6 @@ private fun sectionTitle(categoryId: String): String = when (categoryId) {
     "developer" -> stringResource(R.string.section_developer)
     "converters" -> stringResource(R.string.section_converters)
     "generators" -> stringResource(R.string.section_generators)
+    "calculators" -> stringResource(R.string.section_calculators)
     else -> stringResource(R.string.section_text)
 }
