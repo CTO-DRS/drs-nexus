@@ -78,6 +78,8 @@
     <string name="tool_bmi_desc">مؤشر كتلة الجسم مع تصنيف WHO والوزن الصحي</string>
     <string name="tool_datediff_name">الفرق بين التواريخ</string>
     <string name="tool_datediff_desc">الأيام بين تاريخين وأيام العمل وعمليات التواريخ</string>
+    <string name="tool_currency_name">محوّل العملات</string>
+    <string name="tool_currency_desc">تحويل دون اتصال لـ ٢٢ عملة من جدول أسعار مدمج</string>
 
     <!-- Common tool actions -->
     <string name="action_run">تشغيل</string>
@@ -181,4 +183,27 @@
     <string name="datediff_months">أشهر</string>
     <string name="datediff_years">سنوات</string>
     <string name="datediff_weekdays">أيام العمل</string>
+
+    <!-- Currency (offline) -->
+    <string name="currency_static_notice">أسعار دون اتصال — جدول مرجعي ثابت (%1$s). القيم استرشادية.</string>
+    <string name="currency_from">من</string>
+    <string name="currency_to">إلى</string>
+    <string name="currency_swap">تبديل</string>
+    <string name="currency_rate_line">1 %2$s = %1$s %3$s</string>
+
+    <!-- Settings: data -->
+    <string name="settings_data">البيانات</string>
+    <string name="settings_export_title">تصدير السجل (JSON)</string>
+    <string name="settings_export_desc">حفظ كل عمليات الأدوات والمفضلة في ملف JSON في المكان الذي تختاره</string>
+    <string name="settings_export_button">تصدير</string>
+    <string name="settings_export_done">تم تصدير %1$d عملية — حُفظ الملف</string>
+    <string name="settings_export_failed">فشل التصدير: %1$s</string>
+
+    <!-- Home screen widget -->
+    <string name="widget_name">إحصاءات DRS Nexus</string>
+    <string name="widget_desc">إحصاءات استخدام حية من تطبيق DRS Nexus</string>
+    <string name="widget_runs_label">إجمالي التشغيلات</string>
+    <string name="widget_favorites_label">المفضلة</string>
+    <string name="widget_no_runs">لا توجد عمليات بعد — افتح التطبيق</string>
+    <string name="widget_last_used">الأخير: %1$s</string>
 </resources>

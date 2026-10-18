@@ -27,6 +27,7 @@ object ToolRegistry {
         ToolDef("unit_converter", "tool_unit_name", "tool_unit_desc", "straighten", Category.CONVERTERS),
         ToolDef("base_converter", "tool_base_name", "tool_base_desc", "calculate", Category.CONVERTERS),
         ToolDef("color_converter", "tool_color_name", "tool_color_desc", "palette", Category.CONVERTERS),
+        ToolDef("currency", "tool_currency_name", "tool_currency_desc", "payments", Category.CONVERTERS),
         ToolDef("uuid", "tool_uuid_name", "tool_uuid_desc", "tag", Category.GENERATORS),
         ToolDef("password", "tool_pass_name", "tool_pass_desc", "lock", Category.GENERATORS),
         ToolDef("lorem", "tool_lorem_name", "tool_lorem_desc", "notes", Category.GENERATORS),

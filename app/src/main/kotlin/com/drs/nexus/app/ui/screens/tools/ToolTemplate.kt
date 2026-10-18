@@ -111,6 +111,7 @@ fun toolTitle(nameKey: String): String = when (nameKey) {
     "tool_loan_name" -> stringResource(R.string.tool_loan_name)
     "tool_bmi_name" -> stringResource(R.string.tool_bmi_name)
     "tool_datediff_name" -> stringResource(R.string.tool_datediff_name)
+    "tool_currency_name" -> stringResource(R.string.tool_currency_name)
     else -> stringResource(R.string.tool_text_name)
 }
 
@@ -134,6 +135,7 @@ fun toolDescription(descKey: String): String = when (descKey) {
     "tool_loan_desc" -> stringResource(R.string.tool_loan_desc)
     "tool_bmi_desc" -> stringResource(R.string.tool_bmi_desc)
     "tool_datediff_desc" -> stringResource(R.string.tool_datediff_desc)
+    "tool_currency_desc" -> stringResource(R.string.tool_currency_desc)
     else -> stringResource(R.string.tool_text_desc)
 }
 
@@ -246,6 +248,7 @@ fun ToolDetailScreen(toolId: String, container: AppContainer, navController: Nav
         "jwt_decoder" -> JwtToolScreen(container, navController)
         "base_converter" -> BaseConverterToolScreen(container, navController)
         "color_converter" -> ColorConverterToolScreen(container, navController)
+        "currency" -> CurrencyToolScreen(container, navController)
         "qr_generator" -> QrToolScreen(container, navController)
         "percentage" -> PercentageToolScreen(container, navController)
         "loan" -> LoanToolScreen(container, navController)
