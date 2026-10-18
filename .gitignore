@@ -1,0 +1,14 @@
+*.iml
+.gradle/
+/build/
+build/
+/local.properties
+.idea/
+.DS_Store
+.cxx/
+.kotlin/
+.externalNativeBuild/
+captures/
+app/release/
+*.jks
+!keystore/drs-nexus-release.jks
