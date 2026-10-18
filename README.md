@@ -1,6 +1,6 @@
 # DRS Nexus
 
-**DRS Nexus** is a native Android toolkit that brings eleven real, fully-offline developer utilities into one polished, bilingual (Arabic/English) app.
+**DRS Nexus** is a native Android toolkit that brings nineteen real, fully-offline developer utilities into one polished, bilingual (Arabic/English) app.
 
 Every tool runs 100% on-device. No accounts, no tracking, no network calls for tool execution — the only permissions requested are `INTERNET` and `ACCESS_NETWORK_STATE`.
 
@@ -19,6 +19,14 @@ Every tool runs 100% on-device. No accounts, no tracking, no network calls for t
 | Password Generator | SecureRandom passwords with entropy analysis |
 | Lorem Ipsum | Paragraphs / sentences / words |
 | Text Utilities | Case conversion, statistics, reverse, trim, normalization |
+| JWT Decoder | Decode tokens, inspect claims, expiry status |
+| Base Converter | Binary / octal / decimal / hex and any base 2–36 |
+| Color Converter | HEX ↔ RGB ↔ HSL with live preview and text-contrast advice |
+| QR Generator | ZXing-powered QR codes, PNG export via SAF |
+| Percentage Calculator | Percent of value, share of total, percent change |
+| Loan Calculator | Monthly payment (EMI), total interest, payment count |
+| BMI Calculator | Body mass index with WHO categories and healthy range |
+| Date Difference | Days/weekdays between dates, date arithmetic |
 
 ## Architecture
 
@@ -43,9 +51,9 @@ Requirements: JDK 17, Android SDK 35.
 ## Project layout
 
 ```
-core-common/   # pure Kotlin tool engines + 60+ unit tests
+core-common/   # pure Kotlin tool engines + 88 unit tests
 core-data/     # Room entities/DAOs, DataStore settings repository
-app/           # Compose UI: 11 tool screens + home/tools/history/favorites/settings
+app/           # Compose UI: 19 tool screens + home/tools/history/favorites/settings
 ```
 
 ## License

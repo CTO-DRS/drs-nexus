@@ -103,6 +103,14 @@ fun toolTitle(nameKey: String): String = when (nameKey) {
     "tool_uuid_name" -> stringResource(R.string.tool_uuid_name)
     "tool_pass_name" -> stringResource(R.string.tool_pass_name)
     "tool_lorem_name" -> stringResource(R.string.tool_lorem_name)
+    "tool_jwt_name" -> stringResource(R.string.tool_jwt_name)
+    "tool_base_name" -> stringResource(R.string.tool_base_name)
+    "tool_color_name" -> stringResource(R.string.tool_color_name)
+    "tool_qr_name" -> stringResource(R.string.tool_qr_name)
+    "tool_percent_name" -> stringResource(R.string.tool_percent_name)
+    "tool_loan_name" -> stringResource(R.string.tool_loan_name)
+    "tool_bmi_name" -> stringResource(R.string.tool_bmi_name)
+    "tool_datediff_name" -> stringResource(R.string.tool_datediff_name)
     else -> stringResource(R.string.tool_text_name)
 }
 
@@ -118,6 +126,14 @@ fun toolDescription(descKey: String): String = when (descKey) {
     "tool_uuid_desc" -> stringResource(R.string.tool_uuid_desc)
     "tool_pass_desc" -> stringResource(R.string.tool_pass_desc)
     "tool_lorem_desc" -> stringResource(R.string.tool_lorem_desc)
+    "tool_jwt_desc" -> stringResource(R.string.tool_jwt_desc)
+    "tool_base_desc" -> stringResource(R.string.tool_base_desc)
+    "tool_color_desc" -> stringResource(R.string.tool_color_desc)
+    "tool_qr_desc" -> stringResource(R.string.tool_qr_desc)
+    "tool_percent_desc" -> stringResource(R.string.tool_percent_desc)
+    "tool_loan_desc" -> stringResource(R.string.tool_loan_desc)
+    "tool_bmi_desc" -> stringResource(R.string.tool_bmi_desc)
+    "tool_datediff_desc" -> stringResource(R.string.tool_datediff_desc)
     else -> stringResource(R.string.tool_text_desc)
 }
 
@@ -227,6 +243,14 @@ fun ToolDetailScreen(toolId: String, container: AppContainer, navController: Nav
         "password" -> PasswordToolScreen(container, navController)
         "lorem" -> LoremToolScreen(container, navController)
         "text_utils" -> TextUtilsToolScreen(container, navController)
+        "jwt_decoder" -> JwtToolScreen(container, navController)
+        "base_converter" -> BaseConverterToolScreen(container, navController)
+        "color_converter" -> ColorConverterToolScreen(container, navController)
+        "qr_generator" -> QrToolScreen(container, navController)
+        "percentage" -> PercentageToolScreen(container, navController)
+        "loan" -> LoanToolScreen(container, navController)
+        "bmi" -> BmiToolScreen(container, navController)
+        "date_diff" -> DateDiffToolScreen(container, navController)
         else -> JsonToolScreen(container, navController)
     }
 }

@@ -21,6 +21,8 @@ object NexusPalette {
     val Orange = Color(0xFFFF9F0A)
     val Red = Color(0xFFFF453A)
     val Teal = Color(0xFF64D2FF)
+    val Pink = Color(0xFFFF2D92)
+    val Mint = Color(0xFF00C7BE)
 
     val BgLight = Color(0xFFF2F2F7)
     val CardLight = Color.White
@@ -79,6 +81,7 @@ fun categoryColor(category: String, scheme: NexusColorScheme): Color = when (cat
     "developer" -> scheme.accent
     "converters" -> NexusPalette.Indigo
     "generators" -> NexusPalette.Purple
+    "calculators" -> NexusPalette.Mint
     "text" -> NexusPalette.Teal
     else -> scheme.accent
 }

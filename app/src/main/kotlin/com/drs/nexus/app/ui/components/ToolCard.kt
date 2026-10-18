@@ -12,17 +12,25 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.AccountBalance
+import androidx.compose.material.icons.filled.Calculate
 import androidx.compose.material.icons.filled.Code
+import androidx.compose.material.icons.filled.Event
 import androidx.compose.material.icons.filled.Fingerprint
 import androidx.compose.material.icons.filled.Link
 import androidx.compose.material.icons.filled.Lock
+import androidx.compose.material.icons.filled.MonitorWeight
 import androidx.compose.material.icons.filled.Notes
+import androidx.compose.material.icons.filled.Percent
+import androidx.compose.material.icons.filled.Palette
+import androidx.compose.material.icons.filled.QrCode2
 import androidx.compose.material.icons.filled.Schedule
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.Straighten
 import androidx.compose.material.icons.filled.SwapVert
 import androidx.compose.material.icons.filled.Tag
 import androidx.compose.material.icons.filled.TextFields
+import androidx.compose.material.icons.filled.VpnKey
 import androidx.compose.material.icons.outlined.Star
 import androidx.compose.material.icons.filled.Star
 import androidx.compose.material3.Card
@@ -53,6 +61,14 @@ fun iconForKey(key: String): ImageVector = when (key) {
     "lock" -> Icons.Filled.Lock
     "notes" -> Icons.Filled.Notes
     "text_fields" -> Icons.Filled.TextFields
+    "calculate" -> Icons.Filled.Calculate
+    "palette" -> Icons.Filled.Palette
+    "vpn_key" -> Icons.Filled.VpnKey
+    "qr_code" -> Icons.Filled.QrCode2
+    "percent" -> Icons.Filled.Percent
+    "account_balance" -> Icons.Filled.AccountBalance
+    "monitor_weight" -> Icons.Filled.MonitorWeight
+    "event" -> Icons.Filled.Event
     else -> Icons.Filled.TextFields
 }
 

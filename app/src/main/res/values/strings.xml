@@ -36,6 +36,7 @@
     <string name="section_developer">Developer</string>
     <string name="section_converters">Converters</string>
     <string name="section_generators">Generators</string>
+    <string name="section_calculators">Calculators</string>
     <string name="section_text">Text</string>
 
     <!-- Tool descriptions -->
@@ -61,6 +62,22 @@
     <string name="tool_lorem_desc">Placeholder text as paragraphs, sentences or words</string>
     <string name="tool_text_name">Text Utilities</string>
     <string name="tool_text_desc">Case conversion, statistics, reverse and normalization</string>
+    <string name="tool_jwt_name">JWT Decoder</string>
+    <string name="tool_jwt_desc">Decode tokens, inspect claims and check expiry status</string>
+    <string name="tool_base_name">Base Converter</string>
+    <string name="tool_base_desc">Binary, octal, decimal, hex and any base from 2 to 36</string>
+    <string name="tool_color_name">Color Converter</string>
+    <string name="tool_color_desc">HEX, RGB and HSL conversions with live color preview</string>
+    <string name="tool_qr_name">QR Generator</string>
+    <string name="tool_qr_desc">Generate QR codes from text or links and save them as PNG</string>
+    <string name="tool_percent_name">Percentage Calculator</string>
+    <string name="tool_percent_desc">Percent of value, share of total and percent change</string>
+    <string name="tool_loan_name">Loan Calculator</string>
+    <string name="tool_loan_desc">Monthly payment, total interest and payment schedule</string>
+    <string name="tool_bmi_name">BMI Calculator</string>
+    <string name="tool_bmi_desc">Body mass index with WHO categories and healthy range</string>
+    <string name="tool_datediff_name">Date Difference</string>
+    <string name="tool_datediff_desc">Days between dates, weekdays and date arithmetic</string>
 
     <!-- Common tool actions -->
     <string name="action_run">Run</string>
@@ -129,4 +146,39 @@
     <string name="password_strength_very_strong">Very Strong</string>
     <string name="entropy_bits">Entropy</string>
     <string name="stats_summary">Stats</string>
+
+    <!-- New feature pack -->
+    <string name="action_convert">Convert</string>
+    <string name="action_calculate">Calculate</string>
+    <string name="jwt_valid">Status: VALID (not expired)</string>
+    <string name="jwt_expired">Status: EXPIRED</string>
+    <string name="jwt_no_expiry">Status: NO EXPIRY CLAIM</string>
+    <string name="jwt_header">Header</string>
+    <string name="jwt_payload">Payload</string>
+    <string name="base_input_base">Input base</string>
+    <string name="base_custom_base">Custom base</string>
+    <string name="base_binary">Binary (base 2)</string>
+    <string name="base_octal">Octal (base 8)</string>
+    <string name="base_decimal">Decimal (base 10)</string>
+    <string name="base_hex">Hexadecimal (base 16)</string>
+    <string name="color_alpha">Alpha</string>
+    <string name="color_text_on_color">Best text color on this background</string>
+    <string name="qr_save_png">Save PNG</string>
+    <string name="qr_saved">QR code saved</string>
+    <string name="loan_monthly">Monthly payment</string>
+    <string name="loan_total_paid">Total paid</string>
+    <string name="loan_total_interest">Total interest</string>
+    <string name="loan_months">Number of payments</string>
+    <string name="bmi_metric">Metric (kg/cm)</string>
+    <string name="bmi_imperial">Imperial (lb/in)</string>
+    <string name="bmi_underweight">Underweight</string>
+    <string name="bmi_normal">Normal</string>
+    <string name="bmi_overweight">Overweight</string>
+    <string name="bmi_obese">Obese</string>
+    <string name="bmi_healthy_range">Healthy weight range</string>
+    <string name="datediff_result">Difference</string>
+    <string name="datediff_weeks">Weeks</string>
+    <string name="datediff_months">Months</string>
+    <string name="datediff_years">Years</string>
+    <string name="datediff_weekdays">Weekdays</string>
 </resources>
