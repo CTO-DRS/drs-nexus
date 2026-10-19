@@ -13,8 +13,8 @@ android {
         applicationId = "com.drs.nexus.app"
         minSdk = 26
         targetSdk = 35
-        versionCode = 7
-        versionName = "5.2.0"
+        versionCode = 8
+        versionName = "5.3.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables { useSupportLibrary = true }

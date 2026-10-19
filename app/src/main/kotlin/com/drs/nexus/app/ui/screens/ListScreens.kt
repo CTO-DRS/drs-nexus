@@ -60,18 +60,51 @@ import java.util.Locale
 fun HistoryScreen(container: AppContainer, navController: NavHostController) {
     val runs by container.toolRepository.recentRuns(limit = 200).collectAsState(initial = emptyList())
     val scope = rememberCoroutineScope()
+    val context = androidx.compose.ui.platform.LocalContext.current
+    val csvLauncher = androidx.activity.compose.rememberLauncherForActivityResult(
+        androidx.activity.result.contract.ActivityResultContracts.CreateDocument("text/csv")
+    ) { uri ->
+        if (uri != null) {
+            scope.launch {
+                com.drs.nexus.app.data.CsvExporter.writeTo(context, uri, container)
+                    .onSuccess { count ->
+                        android.widget.Toast.makeText(
+                            context,
+                            context.getString(R.string.csv_export_done, count),
+                            android.widget.Toast.LENGTH_LONG
+                        ).show()
+                    }
+                    .onFailure {
+                        android.widget.Toast.makeText(
+                            context,
+                            context.getString(R.string.csv_export_failed, it.message ?: ""),
+                            android.widget.Toast.LENGTH_LONG
+                        ).show()
+                    }
+            }
+        }
+    }
 
     Column(Modifier.fillMaxSize()) {
         NexusTopBar(
             title = stringResource(R.string.history_title),
             trailing = {
                 if (runs.isNotEmpty()) {
-                    TextButton(onClick = { scope.launch { container.toolRepository.clearHistory() } }) {
-                        Text(
-                            stringResource(R.string.history_clear),
-                            color = MaterialTheme.colorScheme.primary,
-                            style = MaterialTheme.typography.labelLarge
-                        )
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        TextButton(onClick = { csvLauncher.launch("drs-nexus-history.csv") }) {
+                            Text(
+                                stringResource(R.string.history_export_csv),
+                                color = MaterialTheme.colorScheme.primary,
+                                style = MaterialTheme.typography.labelLarge
+                            )
+                        }
+                        TextButton(onClick = { scope.launch { container.toolRepository.clearHistory() } }) {
+                            Text(
+                                stringResource(R.string.history_clear),
+                                color = MaterialTheme.colorScheme.primary,
+                                style = MaterialTheme.typography.labelLarge
+                            )
+                        }
                     }
                 }
             }
