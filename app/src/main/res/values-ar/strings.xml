@@ -228,4 +228,55 @@
     <string name="backup_restore_button">استعادة</string>
     <string name="backup_restore_done">استُعيد: %1$d عملية، %2$d مفضلة، %3$d إعداداً</string>
     <string name="restore_failed">فشلت الاستعادة: %1$s</string>
+
+    <!-- v5.2.0: new tools -->
+    <string name="tool_urlparser_name">محلّل الروابط</string>
+    <string name="tool_urlparser_desc">تفكيك أي رابط إلى المخطط والمضيف والمنفذ والمسار ومعاملات الاستعلام</string>
+    <string name="tool_random_name">المولّد العشوائي</string>
+    <string name="tool_random_desc">أرقام عشوائية في نطاق، ورمي نرد، وقلب عملة</string>
+    <string name="tool_age_name">حاسبة العمر</string>
+    <string name="tool_age_desc">عمر دقيق بالسنوات والأشهر والأيام مع عدّاد عيد الميلاد القادم</string>
+
+    <!-- v5.2.0: actions & home -->
+    <string name="action_parse">حلّل</string>
+    <string name="home_pinned_favorites">المفضلة المثبّتة</string>
+
+    <!-- v5.2.0: age calculator -->
+    <string name="age_format_hint">التواريخ بصيغة YYYY-MM-DD</string>
+    <string name="age_birth_date">تاريخ الميلاد</string>
+    <string name="age_asof_date">تاريخ مرجعي (اختياري)</string>
+    <string name="age_asof_today">افتراضياً اليوم</string>
+    <string name="age_exact">العمر الدقيق</string>
+    <string name="age_ymd">%1$d سنة · %2$d شهر · %3$d يوم</string>
+    <string name="age_total_months">إجمالي الأشهر</string>
+    <string name="age_total_weeks">إجمالي الأسابيع</string>
+    <string name="age_total_days">إجمالي الأيام</string>
+    <string name="age_birth_weekday">وُلد يوم</string>
+    <string name="age_birthday_today">🎉 اليوم عيد ميلادك!</string>
+    <string name="age_next_birthday">عيد الميلاد القادم</string>
+    <string name="age_in_days">بعد %1$d يوماً (%2$s)</string>
+
+    <!-- v5.2.0: URL parser -->
+    <string name="urlparser_host_line">المضيف والمسار</string>
+    <string name="urlparser_scheme">المخطط</string>
+    <string name="urlparser_host">المضيف</string>
+    <string name="urlparser_port">المنفذ</string>
+    <string name="urlparser_default">افتراضي</string>
+    <string name="urlparser_path">المسار</string>
+    <string name="urlparser_segments">المقاطع</string>
+    <string name="urlparser_query">الاستعلام</string>
+    <string name="urlparser_fragment">المقطع المرسّى</string>
+    <string name="urlparser_userinfo">معلومات المستخدم</string>
+    <string name="urlparser_params">معاملات الاستعلام (%1$d)</string>
+    <string name="urlparser_normalized">مُوحَّد: %1$s</string>
+
+    <!-- v5.2.0: random generator -->
+    <string name="random_mode_numbers">أرقام</string>
+    <string name="random_mode_dice">نرد</string>
+    <string name="random_mode_coin">عملة</string>
+    <string name="random_unique_off">التكرار مسموح</string>
+    <string name="random_unique_on">قيم فريدة</string>
+    <string name="random_min">الأدنى</string>
+    <string name="random_max">الأعلى</string>
+    <string name="random_count">العدد</string>
 </resources>

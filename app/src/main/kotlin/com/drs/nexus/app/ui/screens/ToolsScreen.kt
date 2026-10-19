@@ -43,6 +43,8 @@ import com.drs.nexus.app.ui.components.NexusTopBar
 import com.drs.nexus.app.ui.components.SectionHeader
 import com.drs.nexus.app.ui.components.ToolCard
 import com.drs.nexus.app.ui.components.iconForKey
+import com.drs.nexus.app.ui.components.localizedToolDesc
+import com.drs.nexus.app.ui.components.localizedToolName
 import com.drs.nexus.app.ui.theme.NexusShapes
 import com.drs.nexus.app.ui.theme.categoryColor
 import com.drs.nexus.app.ui.theme.nexusColorScheme
@@ -63,33 +65,9 @@ fun ToolsScreen(container: AppContainer, navController: NavHostController) {
         ToolRegistry.all.filter { q.isEmpty() || it.id.contains(q) }
     }
 
-    // Localized names/descriptions resolved via string resources
-    val names = mapOf(
-        "tool_json_name" to stringResource(R.string.tool_json_name),
-        "tool_base64_name" to stringResource(R.string.tool_base64_name),
-        "tool_hash_name" to stringResource(R.string.tool_hash_name),
-        "tool_regex_name" to stringResource(R.string.tool_regex_name),
-        "tool_url_name" to stringResource(R.string.tool_url_name),
-        "tool_ts_name" to stringResource(R.string.tool_ts_name),
-        "tool_unit_name" to stringResource(R.string.tool_unit_name),
-        "tool_uuid_name" to stringResource(R.string.tool_uuid_name),
-        "tool_pass_name" to stringResource(R.string.tool_pass_name),
-        "tool_lorem_name" to stringResource(R.string.tool_lorem_name),
-        "tool_text_name" to stringResource(R.string.tool_text_name)
-    )
-    val descs = mapOf(
-        "tool_json_desc" to stringResource(R.string.tool_json_desc),
-        "tool_base64_desc" to stringResource(R.string.tool_base64_desc),
-        "tool_hash_desc" to stringResource(R.string.tool_hash_desc),
-        "tool_regex_desc" to stringResource(R.string.tool_regex_desc),
-        "tool_url_desc" to stringResource(R.string.tool_url_desc),
-        "tool_ts_desc" to stringResource(R.string.tool_ts_desc),
-        "tool_unit_desc" to stringResource(R.string.tool_unit_desc),
-        "tool_uuid_desc" to stringResource(R.string.tool_uuid_desc),
-        "tool_pass_desc" to stringResource(R.string.tool_pass_desc),
-        "tool_lorem_desc" to stringResource(R.string.tool_lorem_desc),
-        "tool_text_desc" to stringResource(R.string.tool_text_desc)
-    )
+    // Localized names/descriptions for ALL tools via the unified resolver
+    val names = ToolRegistry.all.associate { it.nameKey to localizedToolName(it.nameKey) }
+    val descs = ToolRegistry.all.associate { it.descKey to localizedToolDesc(it.descKey) }
     // Filter on localized names too (real bilingual search)
     val visible = remember(filtered, query) {
         val q = query.trim().lowercase()

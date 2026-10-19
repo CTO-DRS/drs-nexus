@@ -43,6 +43,8 @@ import com.drs.nexus.app.ui.components.DeleteIconButton
 import com.drs.nexus.app.ui.components.EmptyState
 import com.drs.nexus.app.ui.components.NexusTopBar
 import com.drs.nexus.app.ui.components.ToolCard
+import com.drs.nexus.app.ui.components.localizedToolDesc
+import com.drs.nexus.app.ui.components.localizedToolName
 import com.drs.nexus.app.ui.theme.NexusShapes
 import com.drs.nexus.app.ui.theme.categoryColor
 import com.drs.nexus.app.ui.theme.nexusColorScheme
@@ -53,22 +55,6 @@ import kotlinx.coroutines.launch
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
-
-@Composable
-private fun toolName(nameKey: String): String = when (nameKey) {
-    "tool_json_name" -> stringResource(R.string.tool_json_name)
-    "tool_base64_name" -> stringResource(R.string.tool_base64_name)
-    "tool_hash_name" -> stringResource(R.string.tool_hash_name)
-    "tool_regex_name" -> stringResource(R.string.tool_regex_name)
-    "tool_url_name" -> stringResource(R.string.tool_url_name)
-    "tool_ts_name" -> stringResource(R.string.tool_ts_name)
-    "tool_unit_name" -> stringResource(R.string.tool_unit_name)
-    "tool_uuid_name" -> stringResource(R.string.tool_uuid_name)
-    "tool_pass_name" -> stringResource(R.string.tool_pass_name)
-    "tool_lorem_name" -> stringResource(R.string.tool_lorem_name)
-    "tool_text_name" -> stringResource(R.string.tool_text_name)
-    else -> nameKey
-}
 
 @Composable
 fun HistoryScreen(container: AppContainer, navController: NavHostController) {
@@ -110,7 +96,7 @@ fun HistoryScreen(container: AppContainer, navController: NavHostController) {
 @Composable
 private fun HistoryRunCard(run: ToolRunEntity, onClick: () -> Unit, onDelete: () -> Unit, modifier: Modifier = Modifier) {
     val tool = ToolRegistry.byId(run.toolId)
-    val name = tool?.let { toolName(it.nameKey) } ?: run.toolId
+    val name = tool?.let { localizedToolName(it.nameKey) } ?: run.toolId
     val timeFormat = remember { SimpleDateFormat("EEE, MMM d · HH:mm", Locale.getDefault()) }
     Card(
         modifier = modifier
@@ -161,20 +147,8 @@ fun FavoritesScreen(container: AppContainer, navController: NavHostController) {
         } else {
             LazyColumn(contentPadding = PaddingValues(bottom = 24.dp)) {
                 items(favTools, key = { it.id }) { tool ->
-                    val name = toolName(tool.nameKey)
-                    val desc = when (tool.descKey) {
-                        "tool_json_desc" -> stringResource(R.string.tool_json_desc)
-                        "tool_base64_desc" -> stringResource(R.string.tool_base64_desc)
-                        "tool_hash_desc" -> stringResource(R.string.tool_hash_desc)
-                        "tool_regex_desc" -> stringResource(R.string.tool_regex_desc)
-                        "tool_url_desc" -> stringResource(R.string.tool_url_desc)
-                        "tool_ts_desc" -> stringResource(R.string.tool_ts_desc)
-                        "tool_unit_desc" -> stringResource(R.string.tool_unit_desc)
-                        "tool_uuid_desc" -> stringResource(R.string.tool_uuid_desc)
-                        "tool_pass_desc" -> stringResource(R.string.tool_pass_desc)
-                        "tool_lorem_desc" -> stringResource(R.string.tool_lorem_desc)
-                        else -> stringResource(R.string.tool_text_desc)
-                    }
+                    val name = localizedToolName(tool.nameKey)
+                    val desc = localizedToolDesc(tool.descKey)
                     ToolCard(
                         tool = tool,
                         name = name,
