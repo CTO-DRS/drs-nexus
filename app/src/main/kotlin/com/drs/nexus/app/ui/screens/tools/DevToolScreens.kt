@@ -68,7 +68,7 @@ fun JsonToolScreen(container: AppContainer, navController: NavHostController) {
                     } else {
                         val text = if (mode == 1) r.minified else r.formatted
                         ResultCard(title = stringResource(R.string.label_result), content = text)
-                        ResultActionsRow(result = text)
+                        ResultActionsRow(result = text, title = stringResource(R.string.tool_json_name))
                     }
                     if (mode == 0) {
                         Text(
@@ -133,7 +133,7 @@ fun Base64ToolScreen(container: AppContainer, navController: NavHostController) 
         error?.let { ErrorBanner(it) }
         output?.let { out ->
             ResultCard(title = stringResource(R.string.label_result), content = out)
-            ResultActionsRow(result = out)
+            ResultActionsRow(result = out, title = stringResource(R.string.tool_base64_name))
         }
     }
 }
@@ -243,7 +243,7 @@ fun RegexToolScreen(container: AppContainer, navController: NavHostController) {
                 }
                 if (r.replacePreview.isNotEmpty()) {
                     ResultCard(title = "Replaced", content = r.replacePreview)
-                    ResultActionsRow(result = r.replacePreview)
+                    ResultActionsRow(result = r.replacePreview, title = stringResource(R.string.tool_regex_name))
                 }
             }
             is RegexTesterTool.RegexResult.Failure -> ErrorBanner(r.message)
@@ -287,7 +287,7 @@ fun UrlToolScreen(container: AppContainer, navController: NavHostController) {
         error?.let { ErrorBanner(it) }
         output?.let { out ->
             ResultCard(title = stringResource(R.string.label_result), content = out)
-            ResultActionsRow(result = out)
+            ResultActionsRow(result = out, title = stringResource(R.string.tool_url_name))
         }
     }
 }

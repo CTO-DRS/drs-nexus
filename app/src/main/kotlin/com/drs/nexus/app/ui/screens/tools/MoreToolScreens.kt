@@ -78,7 +78,7 @@ fun TimestampToolScreen(container: AppContainer, navController: NavHostControlle
                         Text(v, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurface)
                     }
                 }
-                ResultActionsRow(result = r.text)
+                ResultActionsRow(result = r.text, title = stringResource(R.string.tool_ts_name))
             }
             is TimestampConverterTool.TsResult.Failure -> ErrorBanner(r.message)
             null -> {}
@@ -129,7 +129,7 @@ fun UnitConverterToolScreen(container: AppContainer, navController: NavHostContr
                     title = "${units[fromIndex].label} → ${units[toIndex].label}",
                     content = "${r.formatted} ${units[toIndex].label}"
                 )
-                ResultActionsRow(result = "${r.formatted} ${units[toIndex].label}")
+                ResultActionsRow(result = "${r.formatted} ${units[toIndex].label}", title = stringResource(R.string.tool_unit_name))
             }
             is UnitConverterTool.ConvResult.Failure -> ErrorBanner(r.message)
             null -> {}
@@ -183,7 +183,7 @@ fun UuidToolScreen(container: AppContainer, navController: NavHostController) {
         }
         output?.let { list ->
             ResultCard(title = stringResource(R.string.label_result), content = list.joinToString("\n"))
-            ResultActionsRow(result = list.joinToString("\n"))
+            ResultActionsRow(result = list.joinToString("\n"), title = stringResource(R.string.tool_uuid_name))
         }
     }
 }
@@ -249,7 +249,7 @@ fun PasswordToolScreen(container: AppContainer, navController: NavHostController
         }
         password?.let { pw ->
             ResultCard(title = stringResource(R.string.label_result), content = pw)
-            ResultActionsRow(result = pw)
+            ResultActionsRow(result = pw, title = stringResource(R.string.tool_pass_name))
         }
     }
 }
@@ -295,7 +295,7 @@ fun LoremToolScreen(container: AppContainer, navController: NavHostController) {
         }
         output?.let { out ->
             ResultCard(title = stringResource(R.string.label_result), content = out)
-            ResultActionsRow(result = out)
+            ResultActionsRow(result = out, title = stringResource(R.string.tool_lorem_name))
         }
     }
 }
@@ -344,7 +344,7 @@ fun TextUtilsToolScreen(container: AppContainer, navController: NavHostControlle
         }
         output?.let { out ->
             ResultCard(title = stringResource(R.string.label_result), content = out)
-            ResultActionsRow(result = out)
+            ResultActionsRow(result = out, title = stringResource(R.string.tool_text_name))
         }
     }
 }

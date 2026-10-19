@@ -179,7 +179,7 @@ fun BaseConverterToolScreen(container: AppContainer, navController: NavHostContr
             ResultCard(title = stringResource(R.string.base_decimal), content = r.decimal)
             ResultCard(title = stringResource(R.string.base_hex), content = r.hex)
             ResultCard(title = stringResource(R.string.base_custom_base) + " ${customBase.toInt()}", content = r.customBase)
-            ResultActionsRow(result = "bin=${r.binary} oct=${r.octal} dec=${r.decimal} hex=${r.hex}")
+            ResultActionsRow(result = "bin=${r.binary} oct=${r.octal} dec=${r.decimal} hex=${r.hex}", title = stringResource(R.string.tool_base_name))
         }
     }
 }
@@ -240,7 +240,7 @@ fun ColorConverterToolScreen(container: AppContainer, navController: NavHostCont
                     Text(stringResource(R.string.color_text_on_color), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
                     Text(info.bestTextColor, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurface)
                 }
-                ResultActionsRow(result = "${info.hex} · ${info.cssRgb} · ${info.cssHsl}")
+                ResultActionsRow(result = "${info.hex} · ${info.cssRgb} · ${info.cssHsl}", title = stringResource(R.string.tool_color_name))
             }
             is ColorConverterTool.ParseResult.Failure -> ErrorBanner(r.message)
             null -> {}

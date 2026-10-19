@@ -26,6 +26,7 @@ import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Switch
 import androidx.compose.material3.SwitchDefaults
@@ -33,7 +34,10 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
@@ -80,6 +84,14 @@ fun SettingsScreen(container: AppContainer, navController: NavHostController) {
                 selected = settings.themeMode == ThemeMode.DARK,
                 onClick = { scope.launch { container.settingsRepository.setThemeMode(ThemeMode.DARK) } }
             )
+            RadioRow(
+                title = stringResource(R.string.theme_scheduled),
+                selected = settings.themeMode == ThemeMode.SCHEDULED,
+                onClick = { scope.launch { container.settingsRepository.setThemeMode(ThemeMode.SCHEDULED) } }
+            )
+            if (settings.themeMode == ThemeMode.SCHEDULED) {
+                ScheduledWindowEditor(container, settings)
+            }
         }
         SettingsGroupTitle(stringResource(R.string.settings_language))
         SettingsCard {
@@ -132,6 +144,8 @@ fun SettingsScreen(container: AppContainer, navController: NavHostController) {
         SettingsGroupTitle(stringResource(R.string.settings_data))
         SettingsCard {
             com.drs.nexus.app.data.ExportHistoryRow(container)
+            com.drs.nexus.app.data.BackupCreateRow(container)
+            com.drs.nexus.app.data.BackupRestoreRow(container)
         }
 
         SettingsGroupTitle(stringResource(R.string.settings_about_section))
@@ -162,6 +176,86 @@ fun SettingsScreen(container: AppContainer, navController: NavHostController) {
             }
         }
         Spacer(Modifier.height(24.dp))
+    }
+}
+
+/**
+ * HH:mm editors for the scheduled dark window. Input is validated live and
+ * persisted only when both fields parse, so a typo can never disable the
+ * feature silently.
+ */
+@Composable
+private fun ScheduledWindowEditor(
+    container: AppContainer,
+    settings: com.drs.nexus.core.data.UserSettings
+) {
+    val scope = rememberCoroutineScope()
+    var fromText by remember(settings.darkFrom) {
+        mutableStateOf(settings.darkFrom)
+    }
+    var toText by remember(settings.darkTo) {
+        mutableStateOf(settings.darkTo)
+    }
+    val fromValid = com.drs.nexus.core.util.ThemeSchedule.parseHm(fromText) != null
+    val toValid = com.drs.nexus.core.util.ThemeSchedule.parseHm(toText) != null
+
+    Column(Modifier.padding(horizontal = 16.dp, vertical = 8.dp)) {
+        Text(
+            stringResource(R.string.theme_sched_hint),
+            style = MaterialTheme.typography.bodySmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant
+        )
+        Spacer(Modifier.height(8.dp))
+        Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+            OutlinedTextField(
+                value = fromText,
+                onValueChange = { value ->
+                    fromText = value
+                    val f = com.drs.nexus.core.util.ThemeSchedule.parseHm(value)
+                    val t = com.drs.nexus.core.util.ThemeSchedule.parseHm(toText)
+                    if (f != null && t != null) {
+                        scope.launch {
+                            container.settingsRepository.setScheduledWindow(
+                                com.drs.nexus.core.util.ThemeSchedule.formatHm(f),
+                                com.drs.nexus.core.util.ThemeSchedule.formatHm(t)
+                            )
+                        }
+                    }
+                },
+                label = { Text(stringResource(R.string.theme_sched_from)) },
+                isError = !fromValid,
+                singleLine = true,
+                modifier = Modifier.weight(1f)
+            )
+            OutlinedTextField(
+                value = toText,
+                onValueChange = { value ->
+                    toText = value
+                    val f = com.drs.nexus.core.util.ThemeSchedule.parseHm(fromText)
+                    val t = com.drs.nexus.core.util.ThemeSchedule.parseHm(value)
+                    if (f != null && t != null) {
+                        scope.launch {
+                            container.settingsRepository.setScheduledWindow(
+                                com.drs.nexus.core.util.ThemeSchedule.formatHm(f),
+                                com.drs.nexus.core.util.ThemeSchedule.formatHm(t)
+                            )
+                        }
+                    }
+                },
+                label = { Text(stringResource(R.string.theme_sched_to)) },
+                isError = !toValid,
+                singleLine = true,
+                modifier = Modifier.weight(1f)
+            )
+        }
+        if (!fromValid || !toValid) {
+            Spacer(Modifier.height(4.dp))
+            Text(
+                stringResource(R.string.theme_sched_invalid),
+                style = MaterialTheme.typography.labelSmall,
+                color = MaterialTheme.colorScheme.error
+            )
+        }
     }
 }
 

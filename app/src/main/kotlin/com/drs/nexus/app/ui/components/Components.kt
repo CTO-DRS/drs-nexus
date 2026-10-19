@@ -22,6 +22,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.ContentCopy
 import androidx.compose.material.icons.filled.Delete
+import androidx.compose.material.icons.filled.Image
 import androidx.compose.material.icons.filled.Share
 import androidx.compose.material.icons.filled.Star
 import androidx.compose.material.icons.outlined.StarOutline
@@ -166,6 +167,7 @@ fun EmptyState(icon: ImageVector, message: String, modifier: Modifier = Modifier
 fun ResultActionsRow(
     result: String,
     modifier: Modifier = Modifier,
+    title: String? = null,
     extra: (@Composable () -> Unit)? = null
 ) {
     val context = androidx.compose.ui.platform.LocalContext.current
@@ -183,6 +185,17 @@ fun ResultActionsRow(
             icon = Icons.Filled.Share,
             label = stringResource(R.string.action_share),
             onClick = { shareText(context, result) }
+        )
+        ActionButton(
+            icon = Icons.Filled.Image,
+            label = stringResource(R.string.share_image),
+            onClick = {
+                com.drs.nexus.app.data.ShareImage.shareResultCard(
+                    context,
+                    title ?: "DRS Nexus",
+                    result
+                )
+            }
         )
         extra?.invoke()
     }
