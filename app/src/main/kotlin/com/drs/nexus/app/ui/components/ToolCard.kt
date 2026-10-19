@@ -13,7 +13,9 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.AccountBalance
+import androidx.compose.material.icons.filled.Cake
 import androidx.compose.material.icons.filled.Calculate
+import androidx.compose.material.icons.filled.Casino
 import androidx.compose.material.icons.filled.Code
 import androidx.compose.material.icons.filled.Event
 import androidx.compose.material.icons.filled.Fingerprint
@@ -31,6 +33,7 @@ import androidx.compose.material.icons.filled.Straighten
 import androidx.compose.material.icons.filled.SwapVert
 import androidx.compose.material.icons.filled.Tag
 import androidx.compose.material.icons.filled.TextFields
+import androidx.compose.material.icons.filled.TravelExplore
 import androidx.compose.material.icons.filled.VpnKey
 import androidx.compose.material.icons.outlined.Star
 import androidx.compose.material.icons.filled.Star
@@ -71,6 +74,9 @@ fun iconForKey(key: String): ImageVector = when (key) {
     "monitor_weight" -> Icons.Filled.MonitorWeight
     "event" -> Icons.Filled.Event
     "payments" -> Icons.Filled.Payments
+    "travel_explore" -> Icons.Filled.TravelExplore
+    "casino" -> Icons.Filled.Casino
+    "cake" -> Icons.Filled.Cake
     else -> Icons.Filled.TextFields
 }
 

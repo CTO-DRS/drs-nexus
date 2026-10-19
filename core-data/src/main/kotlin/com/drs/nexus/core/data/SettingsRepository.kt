@@ -22,7 +22,8 @@ data class UserSettings(
     val onboardingDone: Boolean = false,
     val hapticsEnabled: Boolean = true,
     val darkFrom: String = "19:00",
-    val darkTo: String = "06:00"
+    val darkTo: String = "06:00",
+    val toolsGridView: Boolean = false
 )
 
 /** Real DataStore-backed settings repository. */
@@ -35,6 +36,7 @@ class SettingsRepository(private val context: Context) {
         val HAPTICS = booleanPreferencesKey("haptics_enabled")
         val DARK_FROM = stringPreferencesKey("dark_from")
         val DARK_TO = stringPreferencesKey("dark_to")
+        val TOOLS_GRID = booleanPreferencesKey("tools_grid_view")
     }
 
     val settings: Flow<UserSettings> = context.dataStore.data.map { prefs ->
@@ -44,7 +46,8 @@ class SettingsRepository(private val context: Context) {
             onboardingDone = prefs[Keys.ONBOARDING] ?: false,
             hapticsEnabled = prefs[Keys.HAPTICS] ?: true,
             darkFrom = prefs[Keys.DARK_FROM] ?: "19:00",
-            darkTo = prefs[Keys.DARK_TO] ?: "06:00"
+            darkTo = prefs[Keys.DARK_TO] ?: "06:00",
+            toolsGridView = prefs[Keys.TOOLS_GRID] ?: false
         )
     }
 
@@ -72,6 +75,11 @@ class SettingsRepository(private val context: Context) {
         }
     }
 
+    /** Toggles the tools catalog between list and grid layout. */
+    suspend fun setToolsGridView(enabled: Boolean) {
+        context.dataStore.edit { it[Keys.TOOLS_GRID] = enabled }
+    }
+
     /**
      * Exports every setting as a plain string map — the settings payload of
      * the full-backup document.
@@ -85,6 +93,7 @@ class SettingsRepository(private val context: Context) {
             put("haptics_enabled", s.hapticsEnabled.toString())
             put("dark_from", s.darkFrom)
             put("dark_to", s.darkTo)
+            put("tools_grid_view", s.toolsGridView.toString())
         }
     }
 
@@ -105,6 +114,7 @@ class SettingsRepository(private val context: Context) {
         apply("app_language", { runCatching { AppLanguage.valueOf(it) }.getOrNull() }) { setLanguage(it) }
         apply("onboarding_done", { it.toBooleanStrictOrNull() }) { setOnboardingDone(it) }
         apply("haptics_enabled", { it.toBooleanStrictOrNull() }) { setHaptics(it) }
+        apply("tools_grid_view", { it.toBooleanStrictOrNull() }) { setToolsGridView(it) }
         val from = values["dark_from"]?.let { com.drs.nexus.core.util.ThemeSchedule.parseHm(it) }
         val to = values["dark_to"]?.let { com.drs.nexus.core.util.ThemeSchedule.parseHm(it) }
         if (from != null && to != null) {

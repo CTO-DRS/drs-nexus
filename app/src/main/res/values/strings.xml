@@ -279,4 +279,12 @@
     <string name="random_min">Min</string>
     <string name="random_max">Max</string>
     <string name="random_count">Count</string>
+
+    <!-- v5.3.0: grid view, search shortcuts, CSV export -->
+    <string name="tools_view_grid">Switch to grid layout</string>
+    <string name="tools_view_list">Switch to list layout</string>
+    <string name="tools_search_shortcut_hint">Press / or Ctrl+F to search · Esc clears</string>
+    <string name="history_export_csv">Export CSV</string>
+    <string name="csv_export_done">Exported %1$d runs as CSV</string>
+    <string name="csv_export_failed">CSV export failed: %1$s</string>
 </resources>
