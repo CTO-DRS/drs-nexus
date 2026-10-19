@@ -29,6 +29,9 @@ interface ToolRunDao {
 
     @Query("SELECT * FROM tool_runs ORDER BY executedAt DESC")
     suspend fun allRunsOnce(): List<ToolRunEntity>
+
+    @Query("SELECT EXISTS(SELECT 1 FROM tool_runs WHERE toolId = :toolId AND executedAt = :executedAt AND inputPreview = :inputPreview)")
+    suspend fun existsRun(toolId: String, executedAt: Long, inputPreview: String): Boolean
 }
 
 @Dao
@@ -53,4 +56,7 @@ interface FavoriteDao {
 
     @Query("SELECT COUNT(*) FROM favorites")
     suspend fun count(): Int
+
+    @Query("UPDATE favorites SET pinnedAt = :pinnedAt WHERE toolId = :toolId")
+    suspend fun updatePinnedAt(toolId: String, pinnedAt: Long)
 }

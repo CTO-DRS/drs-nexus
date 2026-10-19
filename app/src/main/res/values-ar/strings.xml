@@ -206,4 +206,26 @@
     <string name="widget_favorites_label">المفضلة</string>
     <string name="widget_no_runs">لا توجد عمليات بعد — افتح التطبيق</string>
     <string name="widget_last_used">الأخير: %1$s</string>
+
+    <!-- Scheduled dark theme -->
+    <string name="theme_scheduled">مجدول (تلقائي)</string>
+    <string name="theme_sched_from">الوضع الداكن من</string>
+    <string name="theme_sched_to">حتى</string>
+    <string name="theme_sched_hint">يُفعَّل الوضع الداكن تلقائياً كل يوم ضمن هذه النافذة الزمنية، وتُدعم النوافذ المتجاوزة لمنتصف الليل (مثل 21:00 → 07:00).</string>
+    <string name="theme_sched_invalid">وقت غير صالح — استخدم الصيغة HH:mm (00:00–23:59)</string>
+
+    <!-- Share result as image -->
+    <string name="share_image">صورة</string>
+
+    <!-- Full backup / restore -->
+    <string name="backup_title">نسخ احتياطي كامل</string>
+    <string name="backup_desc">حفظ الإعدادات والمفضلة والسجل في ملف JSON واحد</string>
+    <string name="backup_button">نسخ</string>
+    <string name="backup_done">أُنشئت النسخة: %1$d عملية، %2$d مفضلة، %3$d إعداداً</string>
+    <string name="backup_failed">فشل النسخ الاحتياطي: %1$s</string>
+    <string name="backup_restore_title">استعادة نسخة احتياطية</string>
+    <string name="backup_restore_desc">استيراد ملف نسخة احتياطية — تُدمج البيانات بأمان دون تكرار</string>
+    <string name="backup_restore_button">استعادة</string>
+    <string name="backup_restore_done">استُعيد: %1$d عملية، %2$d مفضلة، %3$d إعداداً</string>
+    <string name="restore_failed">فشلت الاستعادة: %1$s</string>
 </resources>

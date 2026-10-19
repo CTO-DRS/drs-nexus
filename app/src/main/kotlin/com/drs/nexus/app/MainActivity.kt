@@ -6,12 +6,18 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import com.drs.nexus.app.navigation.NexusApp
 import com.drs.nexus.app.ui.theme.NexusTheme
 import com.drs.nexus.core.data.AppLanguage
 import com.drs.nexus.core.data.ThemeMode
+import com.drs.nexus.core.util.ThemeSchedule
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.runBlocking
 import java.util.Locale
@@ -69,10 +75,26 @@ class MainActivity : ComponentActivity() {
         setContent {
             val settings by container.settingsRepository.settings.collectAsState(initial = null)
             val s = settings
-            val dark = when (s?.themeMode) {
-                ThemeMode.DARK -> true
-                ThemeMode.LIGHT -> false
-                else -> (resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK) == Configuration.UI_MODE_NIGHT_YES
+            // Scheduled dark mode must flip by itself while the app stays open;
+            // a one-minute tick recomputes the decision without user interaction.
+            var minuteTick by remember { mutableStateOf(0) }
+            LaunchedEffect(Unit) {
+                while (true) {
+                    delay(60_000L)
+                    minuteTick++
+                }
+            }
+            val dark = remember(s?.themeMode, s?.darkFrom, s?.darkTo, minuteTick) {
+                when (s?.themeMode) {
+                    ThemeMode.DARK -> true
+                    ThemeMode.LIGHT -> false
+                    ThemeMode.SCHEDULED -> ThemeSchedule.isDarkNow(
+                        System.currentTimeMillis(),
+                        s?.darkFrom ?: "19:00",
+                        s?.darkTo ?: "06:00"
+                    )
+                    else -> (resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK) == Configuration.UI_MODE_NIGHT_YES
+                }
             }
             NexusTheme(darkTheme = dark) {
                 NexusApp(container = container)

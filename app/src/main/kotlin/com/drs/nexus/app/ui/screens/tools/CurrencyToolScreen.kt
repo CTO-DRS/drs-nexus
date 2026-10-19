@@ -107,7 +107,7 @@ fun CurrencyToolScreen(container: AppContainer, navController: NavHostController
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
                 }
-                ResultActionsRow(result = conv.formatResult(r.conversion))
+                ResultActionsRow(result = conv.formatResult(r.conversion), title = stringResource(R.string.tool_currency_name))
             }
             is CurrencyConverterTool.Result.Failure -> ErrorBanner(r.message)
             null -> {}

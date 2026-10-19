@@ -206,4 +206,26 @@
     <string name="widget_favorites_label">Favorites</string>
     <string name="widget_no_runs">No runs yet — open the app</string>
     <string name="widget_last_used">Last: %1$s</string>
+
+    <!-- Scheduled dark theme -->
+    <string name="theme_scheduled">Scheduled (auto)</string>
+    <string name="theme_sched_from">Dark from</string>
+    <string name="theme_sched_to">Dark until</string>
+    <string name="theme_sched_hint">Dark theme turns on automatically every day inside this window. Overnight windows (e.g. 21:00 → 07:00) are supported.</string>
+    <string name="theme_sched_invalid">Invalid time — use HH:mm (00:00–23:59)</string>
+
+    <!-- Share result as image -->
+    <string name="share_image">Image</string>
+
+    <!-- Full backup / restore -->
+    <string name="backup_title">Full backup</string>
+    <string name="backup_desc">Save settings, favorites and history into one JSON file</string>
+    <string name="backup_button">Back up</string>
+    <string name="backup_done">Backup created: %1$d runs, %2$d favorites, %3$d settings</string>
+    <string name="backup_failed">Backup failed: %1$s</string>
+    <string name="backup_restore_title">Restore backup</string>
+    <string name="backup_restore_desc">Import a backup file — data is merged safely, nothing is duplicated</string>
+    <string name="backup_restore_button">Restore</string>
+    <string name="backup_restore_done">Restored: %1$d runs, %2$d favorites, %3$d settings</string>
+    <string name="restore_failed">Restore failed: %1$s</string>
 </resources>

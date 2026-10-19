@@ -88,7 +88,7 @@ fun PercentageToolScreen(container: AppContainer, navController: NavHostControll
         error?.let { ErrorBanner(it) }
         output?.let {
             ResultCard(title = stringResource(R.string.label_result), content = it)
-            ResultActionsRow(result = it)
+            ResultActionsRow(result = it, title = stringResource(R.string.tool_percent_name))
         }
     }
 }
@@ -141,7 +141,13 @@ fun LoanToolScreen(container: AppContainer, navController: NavHostController) {
                 Text(stringResource(R.string.loan_months), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
                 Text("${plan.months}", style = MaterialTheme.typography.bodySmall)
             }
-            ResultActionsRow(result = "${stringResource(R.string.loan_monthly)}: ${LoanCalculator.fmt(plan.monthlyPayment)}")
+            ResultActionsRow(
+                result = "${stringResource(R.string.loan_monthly)}: ${LoanCalculator.fmt(plan.monthlyPayment)}\n" +
+                    "${stringResource(R.string.loan_total_paid)}: ${LoanCalculator.fmt(plan.totalPayment)}\n" +
+                    "${stringResource(R.string.loan_total_interest)}: ${LoanCalculator.fmt(plan.totalInterest)}\n" +
+                    "${stringResource(R.string.loan_months)}: ${plan.months}",
+                title = stringResource(R.string.tool_loan_name)
+            )
         }
     }
 }
@@ -201,6 +207,11 @@ fun BmiToolScreen(container: AppContainer, navController: NavHostController) {
                 title = "BMI",
                 content = "${r.bmi} — ${catLabels[r.category]}"
             )
+            ResultActionsRow(
+                result = "BMI ${r.bmi} — ${catLabels[r.category]}\n" +
+                    "${stringResource(R.string.bmi_healthy_range)}: ${r.healthyWeightMinKg}–${r.healthyWeightMaxKg} kg",
+                title = stringResource(R.string.tool_bmi_name)
+            )
             Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
                 Text(stringResource(R.string.bmi_healthy_range), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
                 Text("${r.healthyWeightMinKg}–${r.healthyWeightMaxKg} kg", style = MaterialTheme.typography.bodySmall)
@@ -253,6 +264,10 @@ fun DateDiffToolScreen(container: AppContainer, navController: NavHostController
             ResultCard(
                 title = stringResource(R.string.datediff_result),
                 content = "${d.days} days"
+            )
+            ResultActionsRow(
+                result = "${d.days} days · ${d.weeks} weeks · ${d.months} months · ${d.years} years · ${d.weekdays} weekdays",
+                title = stringResource(R.string.tool_datediff_name)
             )
             Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
                 Text(stringResource(R.string.datediff_weeks), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
