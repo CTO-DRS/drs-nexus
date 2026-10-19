@@ -228,4 +228,55 @@
     <string name="backup_restore_button">Restore</string>
     <string name="backup_restore_done">Restored: %1$d runs, %2$d favorites, %3$d settings</string>
     <string name="restore_failed">Restore failed: %1$s</string>
+
+    <!-- v5.2.0: new tools -->
+    <string name="tool_urlparser_name">URL Parser</string>
+    <string name="tool_urlparser_desc">Break any URL into scheme, host, port, path and query parameters</string>
+    <string name="tool_random_name">Random Generator</string>
+    <string name="tool_random_desc">Random numbers in a range, dice rolls and coin flips</string>
+    <string name="tool_age_name">Age Calculator</string>
+    <string name="tool_age_desc">Exact age in years, months and days with next-birthday countdown</string>
+
+    <!-- v5.2.0: actions & home -->
+    <string name="action_parse">Parse</string>
+    <string name="home_pinned_favorites">Pinned Favorites</string>
+
+    <!-- v5.2.0: age calculator -->
+    <string name="age_format_hint">Dates use the YYYY-MM-DD format</string>
+    <string name="age_birth_date">Birth date</string>
+    <string name="age_asof_date">Reference date (optional)</string>
+    <string name="age_asof_today">defaults to today</string>
+    <string name="age_exact">Exact age</string>
+    <string name="age_ymd">%1$d years · %2$d months · %3$d days</string>
+    <string name="age_total_months">Total months</string>
+    <string name="age_total_weeks">Total weeks</string>
+    <string name="age_total_days">Total days</string>
+    <string name="age_birth_weekday">Born on a</string>
+    <string name="age_birthday_today">🎉 Today is the birthday!</string>
+    <string name="age_next_birthday">Next birthday</string>
+    <string name="age_in_days">in %1$d days (%2$s)</string>
+
+    <!-- v5.2.0: URL parser -->
+    <string name="urlparser_host_line">Host &amp; path</string>
+    <string name="urlparser_scheme">Scheme</string>
+    <string name="urlparser_host">Host</string>
+    <string name="urlparser_port">Port</string>
+    <string name="urlparser_default">default</string>
+    <string name="urlparser_path">Path</string>
+    <string name="urlparser_segments">Segments</string>
+    <string name="urlparser_query">Query</string>
+    <string name="urlparser_fragment">Fragment</string>
+    <string name="urlparser_userinfo">User info</string>
+    <string name="urlparser_params">Query parameters (%1$d)</string>
+    <string name="urlparser_normalized">Normalized: %1$s</string>
+
+    <!-- v5.2.0: random generator -->
+    <string name="random_mode_numbers">Numbers</string>
+    <string name="random_mode_dice">Dice</string>
+    <string name="random_mode_coin">Coin</string>
+    <string name="random_unique_off">allow repeats</string>
+    <string name="random_unique_on">unique only</string>
+    <string name="random_min">Min</string>
+    <string name="random_max">Max</string>
+    <string name="random_count">Count</string>
 </resources>

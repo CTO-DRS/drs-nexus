@@ -239,11 +239,13 @@ fun ToolDetailScreen(toolId: String, container: AppContainer, navController: Nav
         "hash" -> HashToolScreen(container, navController)
         "regex_tester" -> RegexToolScreen(container, navController)
         "url_codec" -> UrlToolScreen(container, navController)
+        "url_parser" -> UrlParserToolScreen(container, navController)
         "timestamp" -> TimestampToolScreen(container, navController)
         "unit_converter" -> UnitConverterToolScreen(container, navController)
         "uuid" -> UuidToolScreen(container, navController)
         "password" -> PasswordToolScreen(container, navController)
         "lorem" -> LoremToolScreen(container, navController)
+        "random_gen" -> RandomGenToolScreen(container, navController)
         "text_utils" -> TextUtilsToolScreen(container, navController)
         "jwt_decoder" -> JwtToolScreen(container, navController)
         "base_converter" -> BaseConverterToolScreen(container, navController)
@@ -254,6 +256,7 @@ fun ToolDetailScreen(toolId: String, container: AppContainer, navController: Nav
         "loan" -> LoanToolScreen(container, navController)
         "bmi" -> BmiToolScreen(container, navController)
         "date_diff" -> DateDiffToolScreen(container, navController)
+        "age_calc" -> AgeCalcToolScreen(container, navController)
         else -> JsonToolScreen(container, navController)
     }
 }

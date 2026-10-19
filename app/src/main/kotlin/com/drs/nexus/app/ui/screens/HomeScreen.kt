@@ -43,6 +43,7 @@ import com.drs.nexus.app.navigation.Routes
 import com.drs.nexus.app.ui.components.EmptyState
 import com.drs.nexus.app.ui.components.NexusTopBar
 import com.drs.nexus.app.ui.components.iconForKey
+import com.drs.nexus.app.ui.components.localizedToolName
 import com.drs.nexus.app.ui.theme.NexusPalette
 import com.drs.nexus.app.ui.theme.NexusShapes
 import com.drs.nexus.app.ui.theme.categoryColor
@@ -142,41 +143,38 @@ fun HomeScreen(container: AppContainer, navController: NavHostController) {
                 )
             }
         }
-        item {
-            Text(
-                stringResource(R.string.home_quick_tools),
-                style = MaterialTheme.typography.titleSmall,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-                modifier = Modifier.padding(horizontal = 20.dp, vertical = 8.dp)
-            )
+        if (favorites.isEmpty()) {
+            item {
+                Text(
+                    stringResource(R.string.home_quick_tools),
+                    style = MaterialTheme.typography.titleSmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    modifier = Modifier.padding(horizontal = 20.dp, vertical = 8.dp)
+                )
+            }
+        } else {
+            item {
+                Text(
+                    stringResource(R.string.home_pinned_favorites),
+                    style = MaterialTheme.typography.titleSmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    modifier = Modifier.padding(horizontal = 20.dp, vertical = 8.dp)
+                )
+            }
         }
-        val quick = ToolRegistry.all.take(4)
+        // Pinned favorites win over the static quick list; fall back when empty.
+        val quick = if (favorites.isEmpty()) ToolRegistry.all.take(4)
+        else favorites.take(4).mapNotNull { ToolRegistry.byId(it.toolId) }
         items(quick.size) { i ->
             val tool = quick[i]
             QuickToolRow(
                 tool = tool,
-                name = localToolName(tool.nameKey),
+                name = localizedToolName(tool.nameKey),
                 tint = categoryColor(tool.category.id, scheme),
                 onClick = { navController.navigate(Routes.tool(tool.id)) }
             )
         }
     }
-}
-
-@Composable
-private fun localToolName(nameKey: String): String = when (nameKey) {
-    "tool_json_name" -> stringResource(R.string.tool_json_name)
-    "tool_base64_name" -> stringResource(R.string.tool_base64_name)
-    "tool_hash_name" -> stringResource(R.string.tool_hash_name)
-    "tool_regex_name" -> stringResource(R.string.tool_regex_name)
-    "tool_url_name" -> stringResource(R.string.tool_url_name)
-    "tool_ts_name" -> stringResource(R.string.tool_ts_name)
-    "tool_unit_name" -> stringResource(R.string.tool_unit_name)
-    "tool_uuid_name" -> stringResource(R.string.tool_uuid_name)
-    "tool_pass_name" -> stringResource(R.string.tool_pass_name)
-    "tool_lorem_name" -> stringResource(R.string.tool_lorem_name)
-    "tool_text_name" -> stringResource(R.string.tool_text_name)
-    else -> nameKey
 }
 
 @Composable
@@ -217,7 +215,7 @@ private fun QuickTile(icon: androidx.compose.ui.graphics.vector.ImageVector, lab
 @Composable
 private fun RecentRunCard(run: ToolRunEntity, modifier: Modifier = Modifier, onClick: () -> Unit) {
     val tool = ToolRegistry.byId(run.toolId)
-    val name = tool?.let { localToolName(it.nameKey) } ?: run.toolId
+    val name = tool?.let { localizedToolName(it.nameKey) } ?: run.toolId
     val dark = isSystemInDarkTheme()
     val tint = categoryColor(run.toolId, nexusColorScheme(dark))
     val timeFormat = remember { SimpleDateFormat("MMM d · HH:mm", Locale.getDefault()) }
