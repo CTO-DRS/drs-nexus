@@ -31,6 +31,7 @@ object Routes {
     const val FAVORITES = "favorites"
     const val SETTINGS = "settings"
     const val ABOUT = "about"
+    const val USAGE = "usage"
     const val TOOL = "tool/{toolId}"
     fun tool(toolId: String) = "tool/$toolId"
 }
@@ -85,6 +86,9 @@ fun NexusNavHost(
         }
         composable(Routes.ABOUT) {
             AboutScreen(navController = navController)
+        }
+        composable(Routes.USAGE) {
+            com.drs.nexus.app.ui.screens.UsageStatsScreen(container = container, navController = navController)
         }
         composable(
             route = Routes.TOOL,

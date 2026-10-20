@@ -93,6 +93,35 @@ fun SettingsScreen(container: AppContainer, navController: NavHostController) {
                 ScheduledWindowEditor(container, settings)
             }
         }
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.S) {
+            SettingsCard {
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = 16.dp, vertical = 12.dp),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Column(Modifier.weight(1f)) {
+                        Text(
+                            stringResource(R.string.settings_dynamic_color),
+                            style = MaterialTheme.typography.titleMedium,
+                            color = MaterialTheme.colorScheme.onSurface
+                        )
+                        Text(
+                            stringResource(R.string.settings_dynamic_color_desc),
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
+                    Spacer(Modifier.width(12.dp))
+                    Switch(
+                        checked = settings.dynamicColorEnabled,
+                        onCheckedChange = { enabled -> scope.launch { container.settingsRepository.setDynamicColor(enabled) } },
+                        colors = SwitchDefaults.colors(checkedTrackColor = MaterialTheme.colorScheme.primary)
+                    )
+                }
+            }
+        }
         SettingsGroupTitle(stringResource(R.string.settings_language))
         SettingsCard {
             RadioRow(
@@ -136,6 +165,42 @@ fun SettingsScreen(container: AppContainer, navController: NavHostController) {
                 Switch(
                     checked = settings.hapticsEnabled,
                     onCheckedChange = { enabled -> scope.launch { container.settingsRepository.setHaptics(enabled) } },
+                    colors = SwitchDefaults.colors(checkedTrackColor = MaterialTheme.colorScheme.primary)
+                )
+            }
+        }
+
+        SettingsGroupTitle(stringResource(R.string.settings_security))
+        SettingsCard {
+            val context = LocalContext.current
+            val km = remember {
+                context.getSystemService(android.content.Context.KEYGUARD_SERVICE) as? android.app.KeyguardManager
+            }
+            val deviceSecure = km?.isDeviceSecure ?: false
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 16.dp, vertical = 12.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Column(Modifier.weight(1f)) {
+                    Text(
+                        stringResource(R.string.settings_applock),
+                        style = MaterialTheme.typography.titleMedium,
+                        color = MaterialTheme.colorScheme.onSurface
+                    )
+                    Text(
+                        if (deviceSecure) stringResource(R.string.settings_applock_desc)
+                        else stringResource(R.string.settings_applock_no_screenlock),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+                Spacer(Modifier.width(12.dp))
+                Switch(
+                    checked = settings.appLockEnabled,
+                    enabled = deviceSecure,
+                    onCheckedChange = { enabled -> scope.launch { container.settingsRepository.setAppLock(enabled) } },
                     colors = SwitchDefaults.colors(checkedTrackColor = MaterialTheme.colorScheme.primary)
                 )
             }

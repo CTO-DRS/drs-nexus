@@ -287,4 +287,29 @@
     <string name="history_export_csv">تصدير CSV</string>
     <string name="csv_export_done">صُدّرت %1$d عملية بصيغة CSV</string>
     <string name="csv_export_failed">فشل تصدير CSV: %1$s</string>
+
+    <!-- v5.4.0: إحصاءات الاستخدام + قفل التطبيق + الألوان الديناميكية -->
+    <string name="usage_title">إحصاءات الاستخدام</string>
+    <string name="usage_empty">لا توجد بيانات استخدام بعد.\nشغّل بعض الأدوات وستظهر إحصاءاتك هنا.</string>
+    <string name="usage_total">إجمالي العمليات</string>
+    <string name="usage_distinct">أدوات مستخدمة</string>
+    <string name="usage_week_now">آخر 7 أيام</string>
+    <string name="usage_week_prev">الـ 7 أيام السابقة</string>
+    <string name="usage_trend_up">ارتفاع %1$d مقارنة بالأسبوع السابق</string>
+    <string name="usage_trend_down">انخفاض %1$d مقارنة بالأسبوع السابق</string>
+    <string name="usage_trend_flat">مماثل للأسبوع السابق</string>
+    <string name="usage_top_tools">الأدوات الأكثر استخداماً</string>
+    <string name="usage_runs_value">%1$d عملية</string>
+    <string name="settings_security">الأمان</string>
+    <string name="settings_applock">قفل التطبيق</string>
+    <string name="settings_applock_desc">طلب البصمة أو قفل الشاشة عند فتح التطبيق</string>
+    <string name="settings_applock_no_screenlock">اضبط قفل شاشة الجهاز أولاً لتمكين هذا الخيار</string>
+    <string name="applock_prompt_title">فتح DRS Nexus</string>
+    <string name="applock_prompt_subtitle">أكّد هويتك للمتابعة</string>
+    <string name="applock_locked_title">التطبيق مقفل</string>
+    <string name="applock_locked_desc">تحقق من هويتك للوصول إلى أدواتك</string>
+    <string name="applock_retry">فتح</string>
+    <string name="settings_dynamic_color">ألوان ديناميكية</string>
+    <string name="settings_dynamic_color_desc">تلوين التطبيق بألوان خلفيتك (أندرويد 12+)</string>
 </resources>
+
