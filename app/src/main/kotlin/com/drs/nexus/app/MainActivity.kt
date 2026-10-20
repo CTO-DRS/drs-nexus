@@ -2,17 +2,29 @@ package com.drs.nexus.app
 
 import android.content.Context
 import android.content.res.Configuration
+import android.os.Build
 import android.os.Bundle
-import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.material3.dynamicDarkColorScheme
+import androidx.compose.material3.dynamicLightColorScheme
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
+import androidx.fragment.app.FragmentActivity
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.LifecycleEventObserver
 import com.drs.nexus.app.navigation.NexusApp
+import com.drs.nexus.app.security.AppLockController
+import com.drs.nexus.app.ui.screens.AppLockOverlay
 import com.drs.nexus.app.ui.theme.NexusTheme
 import com.drs.nexus.core.data.AppLanguage
 import com.drs.nexus.core.data.ThemeMode
@@ -25,8 +37,18 @@ import java.util.Locale
 /**
  * Single-activity Compose app. Language is applied by wrapping the base context
  * so RTL layout direction and string resources both switch correctly.
+ *
+ * Extends FragmentActivity (not ComponentActivity directly) because the
+ * androidx.biometric app lock requires it.
  */
-class MainActivity : ComponentActivity() {
+class MainActivity : FragmentActivity() {
+
+    private val lockController by lazy { AppLockController(this) }
+    private var backgroundedAtMs: Long? = null
+    private var cachedAppLockEnabled = false
+
+    // Compose state so the UI can gate rendering until the lock decision is known.
+    private var initialLockEvaluated by androidx.compose.runtime.mutableStateOf(false)
 
     override fun attachBaseContext(newBase: Context) {
         val language = readLanguagePreference(newBase)
@@ -59,6 +81,21 @@ class MainActivity : ComponentActivity() {
         config.setLocale(locale)
         config.setLayoutDirection(locale)
         return base.createConfigurationContext(config)
+    }
+
+    override fun onStart() {
+        super.onStart()
+        // Warm return from background. Cold start is handled after the first
+        // settings snapshot arrives (composition effect below).
+        if (initialLockEvaluated) {
+            lockController.evaluateForeground(cachedAppLockEnabled, backgroundedAtMs)
+        }
+        backgroundedAtMs = null
+    }
+
+    override fun onStop() {
+        super.onStop()
+        backgroundedAtMs = System.currentTimeMillis()
     }
 
     override fun onResume() {
@@ -96,8 +133,55 @@ class MainActivity : ComponentActivity() {
                     else -> (resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK) == Configuration.UI_MODE_NIGHT_YES
                 }
             }
-            NexusTheme(darkTheme = dark) {
-                NexusApp(container = container)
+            // Cold-start lock evaluation happens as soon as real settings arrive.
+            // The "null" initial snapshot is skipped — locking must use real prefs.
+            LaunchedEffect(s?.appLockEnabled) {
+                val enabled = s?.appLockEnabled ?: return@LaunchedEffect
+                cachedAppLockEnabled = enabled
+                if (!initialLockEvaluated) {
+                    initialLockEvaluated = true
+                    lockController.evaluateForeground(enabled, null)
+                }
+            }
+            // Material You accent — takes the wallpaper-derived color on Android 12+.
+            val context = LocalContext.current
+            val dynamicAccent = remember(s?.dynamicColorEnabled, dark) {
+                if (s?.dynamicColorEnabled == true && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                    if (dark) dynamicDarkColorScheme(context).primary
+                    else dynamicLightColorScheme(context).primary
+                } else null
+            }
+            Box(Modifier.fillMaxSize()) {
+                if (initialLockEvaluated) {
+                    NexusTheme(darkTheme = dark, dynamicAccent = dynamicAccent) {
+                        NexusApp(container = container)
+                    }
+                }
+                // The lock gate sits on top of everything, stays fully opaque, and
+                // also covers the brief cold-start window before settings load so
+                // protected content is never revealed.
+                if (lockController.state.locked) {
+                    AppLockOverlay(
+                        controller = lockController,
+                        promptTitle = getString(com.drs.nexus.app.R.string.applock_prompt_title),
+                        promptSubtitle = getString(com.drs.nexus.app.R.string.applock_prompt_subtitle)
+                    )
+                    // Show the system prompt as soon as the activity reaches RESUMED.
+                    DisposableEffect(Unit) {
+                        val observer = LifecycleEventObserver { _, event ->
+                            if (event == Lifecycle.Event.ON_RESUME && lockController.state.locked) {
+                                lockController.authenticate(
+                                    title = getString(com.drs.nexus.app.R.string.applock_prompt_title),
+                                    subtitle = getString(com.drs.nexus.app.R.string.applock_prompt_subtitle)
+                                )
+                            }
+                        }
+                        lifecycle.addObserver(observer)
+                        onDispose { lifecycle.removeObserver(observer) }
+                    }
+                } else if (!initialLockEvaluated) {
+                    com.drs.nexus.app.ui.screens.BlankLockCover()
+                }
             }
         }
     }

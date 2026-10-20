@@ -23,7 +23,9 @@ data class UserSettings(
     val hapticsEnabled: Boolean = true,
     val darkFrom: String = "19:00",
     val darkTo: String = "06:00",
-    val toolsGridView: Boolean = false
+    val toolsGridView: Boolean = false,
+    val appLockEnabled: Boolean = false,
+    val dynamicColorEnabled: Boolean = false
 )
 
 /** Real DataStore-backed settings repository. */
@@ -37,6 +39,8 @@ class SettingsRepository(private val context: Context) {
         val DARK_FROM = stringPreferencesKey("dark_from")
         val DARK_TO = stringPreferencesKey("dark_to")
         val TOOLS_GRID = booleanPreferencesKey("tools_grid_view")
+        val APP_LOCK = booleanPreferencesKey("app_lock_enabled")
+        val DYNAMIC_COLOR = booleanPreferencesKey("dynamic_color_enabled")
     }
 
     val settings: Flow<UserSettings> = context.dataStore.data.map { prefs ->
@@ -47,7 +51,9 @@ class SettingsRepository(private val context: Context) {
             hapticsEnabled = prefs[Keys.HAPTICS] ?: true,
             darkFrom = prefs[Keys.DARK_FROM] ?: "19:00",
             darkTo = prefs[Keys.DARK_TO] ?: "06:00",
-            toolsGridView = prefs[Keys.TOOLS_GRID] ?: false
+            toolsGridView = prefs[Keys.TOOLS_GRID] ?: false,
+            appLockEnabled = prefs[Keys.APP_LOCK] ?: false,
+            dynamicColorEnabled = prefs[Keys.DYNAMIC_COLOR] ?: false
         )
     }
 
@@ -80,6 +86,16 @@ class SettingsRepository(private val context: Context) {
         context.dataStore.edit { it[Keys.TOOLS_GRID] = enabled }
     }
 
+    /** Requires biometric/credential authentication when the app starts. */
+    suspend fun setAppLock(enabled: Boolean) {
+        context.dataStore.edit { it[Keys.APP_LOCK] = enabled }
+    }
+
+    /** Material You wallpaper-driven accent (Android 12+). */
+    suspend fun setDynamicColor(enabled: Boolean) {
+        context.dataStore.edit { it[Keys.DYNAMIC_COLOR] = enabled }
+    }
+
     /**
      * Exports every setting as a plain string map — the settings payload of
      * the full-backup document.
@@ -94,6 +110,8 @@ class SettingsRepository(private val context: Context) {
             put("dark_from", s.darkFrom)
             put("dark_to", s.darkTo)
             put("tools_grid_view", s.toolsGridView.toString())
+            put("app_lock_enabled", s.appLockEnabled.toString())
+            put("dynamic_color_enabled", s.dynamicColorEnabled.toString())
         }
     }
 
@@ -115,6 +133,8 @@ class SettingsRepository(private val context: Context) {
         apply("onboarding_done", { it.toBooleanStrictOrNull() }) { setOnboardingDone(it) }
         apply("haptics_enabled", { it.toBooleanStrictOrNull() }) { setHaptics(it) }
         apply("tools_grid_view", { it.toBooleanStrictOrNull() }) { setToolsGridView(it) }
+        apply("app_lock_enabled", { it.toBooleanStrictOrNull() }) { setAppLock(it) }
+        apply("dynamic_color_enabled", { it.toBooleanStrictOrNull() }) { setDynamicColor(it) }
         val from = values["dark_from"]?.let { com.drs.nexus.core.util.ThemeSchedule.parseHm(it) }
         val to = values["dark_to"]?.let { com.drs.nexus.core.util.ThemeSchedule.parseHm(it) }
         if (from != null && to != null) {

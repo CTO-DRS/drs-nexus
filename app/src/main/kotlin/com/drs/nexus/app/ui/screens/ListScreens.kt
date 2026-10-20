@@ -16,11 +16,13 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.History
+import androidx.compose.material.icons.filled.QueryStats
 import androidx.compose.material.icons.filled.Star
 import androidx.compose.material.icons.filled.TextFields
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
@@ -89,8 +91,15 @@ fun HistoryScreen(container: AppContainer, navController: NavHostController) {
         NexusTopBar(
             title = stringResource(R.string.history_title),
             trailing = {
-                if (runs.isNotEmpty()) {
-                    Row(verticalAlignment = Alignment.CenterVertically) {
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    IconButton(onClick = { navController.navigate(Routes.USAGE) }) {
+                        Icon(
+                            Icons.Filled.QueryStats,
+                            contentDescription = stringResource(R.string.usage_title),
+                            tint = MaterialTheme.colorScheme.primary
+                        )
+                    }
+                    if (runs.isNotEmpty()) {
                         TextButton(onClick = { csvLauncher.launch("drs-nexus-history.csv") }) {
                             Text(
                                 stringResource(R.string.history_export_csv),

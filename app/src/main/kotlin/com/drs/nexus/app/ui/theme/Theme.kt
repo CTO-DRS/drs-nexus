@@ -51,15 +51,17 @@ data class NexusColorScheme(
 )
 
 @Composable
-fun nexusColorScheme(dark: Boolean): NexusColorScheme =
-    if (dark) NexusColorScheme(
+fun nexusColorScheme(dark: Boolean, accentOverride: Color? = null): NexusColorScheme {
+    val accent = accentOverride ?: NexusPalette.Blue
+    val accentSoftAlpha = if (dark) 0.16f else 0.12f
+    return if (dark) NexusColorScheme(
         background = NexusPalette.BgDark,
         card = NexusPalette.CardDark,
         textPrimary = NexusPalette.TextPrimaryDark,
         textSecondary = NexusPalette.TextSecondaryDark,
         separator = NexusPalette.SeparatorDark,
-        accent = NexusPalette.Blue,
-        accentSoft = NexusPalette.Blue.copy(alpha = 0.16f),
+        accent = accent,
+        accentSoft = accent.copy(alpha = accentSoftAlpha),
         success = NexusPalette.Green,
         warning = NexusPalette.Orange,
         danger = NexusPalette.Red
@@ -69,12 +71,13 @@ fun nexusColorScheme(dark: Boolean): NexusColorScheme =
         textPrimary = NexusPalette.TextPrimaryLight,
         textSecondary = NexusPalette.TextSecondaryLight,
         separator = NexusPalette.SeparatorLight,
-        accent = NexusPalette.Blue,
-        accentSoft = NexusPalette.Blue.copy(alpha = 0.12f),
+        accent = accent,
+        accentSoft = accent.copy(alpha = accentSoftAlpha),
         success = NexusPalette.Green,
         warning = NexusPalette.Orange,
         danger = NexusPalette.Red
     )
+}
 
 /** Category → icon tint mapping, consistent across the app. */
 fun categoryColor(category: String, scheme: NexusColorScheme): Color = when (category) {
@@ -110,8 +113,12 @@ object NexusShapes {
 }
 
 @Composable
-fun NexusTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) {
-    val scheme = nexusColorScheme(darkTheme)
+fun NexusTheme(
+    darkTheme: Boolean = isSystemInDarkTheme(),
+    dynamicAccent: Color? = null,
+    content: @Composable () -> Unit
+) {
+    val scheme = nexusColorScheme(darkTheme, dynamicAccent)
     // We keep MaterialTheme active for M3 components but drive most visuals
     // through our NexusColorScheme via CompositionLocal-like pattern.
     MaterialTheme(

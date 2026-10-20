@@ -287,4 +287,29 @@
     <string name="history_export_csv">Export CSV</string>
     <string name="csv_export_done">Exported %1$d runs as CSV</string>
     <string name="csv_export_failed">CSV export failed: %1$s</string>
+
+    <!-- v5.4.0: usage insights, app lock, dynamic colors -->
+    <string name="usage_title">Usage insights</string>
+    <string name="usage_empty">No usage data yet.\nRun some tools and your stats will appear here.</string>
+    <string name="usage_total">Total runs</string>
+    <string name="usage_distinct">Tools used</string>
+    <string name="usage_week_now">Last 7 days</string>
+    <string name="usage_week_prev">Previous 7 days</string>
+    <string name="usage_trend_up">Up %1$d vs previous week</string>
+    <string name="usage_trend_down">Down %1$d vs previous week</string>
+    <string name="usage_trend_flat">Flat vs previous week</string>
+    <string name="usage_top_tools">Most used tools</string>
+    <string name="usage_runs_value">%1$d runs</string>
+    <string name="settings_security">Security</string>
+    <string name="settings_applock">App lock</string>
+    <string name="settings_applock_desc">Ask for fingerprint or screen lock when opening the app</string>
+    <string name="settings_applock_no_screenlock">Set a device screen lock first to enable this</string>
+    <string name="applock_prompt_title">Unlock DRS Nexus</string>
+    <string name="applock_prompt_subtitle">Authenticate to continue</string>
+    <string name="applock_locked_title">App locked</string>
+    <string name="applock_locked_desc">Verify your identity to access your tools</string>
+    <string name="applock_retry">Unlock</string>
+    <string name="settings_dynamic_color">Dynamic colors</string>
+    <string name="settings_dynamic_color_desc">Tint the app with your wallpaper colors (Android 12+)</string>
 </resources>
+
