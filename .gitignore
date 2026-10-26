@@ -11,4 +11,7 @@ build/
 captures/
 app/release/
 *.jks
-!keystore/drs-nexus-release.jks
+
+# Signing material (kept outside the repo)
+*.keystore
+keystore.properties

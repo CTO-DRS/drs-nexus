@@ -5,6 +5,17 @@ plugins {
     alias(libs.plugins.kotlin.serialization)
 }
 
+// Release signing is read from keystore.properties (git-ignored, project root) or
+// environment variables. The keystore and its passwords are kept outside this repository.
+val signingProps = java.util.Properties().apply {
+    val f = rootProject.file("keystore.properties")
+    if (f.exists()) f.inputStream().use { load(it) }
+}
+fun signingValue(key: String, env: String): String? =
+    System.getenv(env) ?: signingProps.getProperty(key)
+val releaseStoreFile = signingValue("storeFile", "NEXUS_STORE_FILE")?.let { rootProject.file(it) }
+val hasReleaseSigning = releaseStoreFile?.exists() == true
+
 android {
     namespace = "com.drs.nexus.app"
     compileSdk = 35
@@ -21,11 +32,13 @@ android {
     }
 
     signingConfigs {
-        create("release") {
-            storeFile = file("../keystore/drs-nexus-release.jks")
-            storePassword = System.getenv("NEXUS_STORE_PASSWORD") ?: "***REMOVED***"
-            keyAlias = "drs-nexus"
-            keyPassword = System.getenv("NEXUS_KEY_PASSWORD") ?: "***REMOVED***"
+        if (hasReleaseSigning) {
+            create("release") {
+                storeFile = releaseStoreFile
+                storePassword = signingValue("storePassword", "NEXUS_STORE_PASSWORD")
+                keyAlias = signingValue("keyAlias", "NEXUS_KEY_ALIAS") ?: "drs-nexus"
+                keyPassword = signingValue("keyPassword", "NEXUS_KEY_PASSWORD")
+            }
         }
     }
 
@@ -38,7 +51,7 @@ android {
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-            signingConfig = signingConfigs.getByName("release")
+            if (hasReleaseSigning) signingConfig = signingConfigs.getByName("release")
         }
     }
 
